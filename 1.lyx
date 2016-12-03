@@ -98,11 +98,29 @@
 HW1
 \end_layout
 
+\begin_layout Author
+Aran Carmon <aran.carmon@gmail.com> 038847588
+\end_layout
+
+\begin_layout Standard
+1.
+ We can implement matrix squaring with matrix multiplication by multiplying
+ a matrix by itself.
+\end_layout
+
+\begin_layout Standard
+We can implement matrix multiplication with matrix squaring, by squaring
+ the following block matrix:
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{array}{ccc}
-\text{Aran Carmon} & \text{<aran.carmon@gmail.com>} & \text{038847588}\end{array}
+\begin{bmatrix}0 & A\\
+B & 0
+\end{bmatrix}^{2}=\begin{bmatrix}AB & 0\\
+0 & AB
+\end{bmatrix}
 \]
 
 \end_inset
@@ -111,9 +129,33 @@ HW1
 \end_layout
 
 \begin_layout Standard
+If squaring is asymptotically 
+\begin_inset Formula $o(n^{\alpha})$
+\end_inset
+
+ for some 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, the multiplication using this algorithm is 
+\begin_inset Formula $o((2n)^{\alpha})=o(n^{a})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So both have the same asymptotic complexity.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
