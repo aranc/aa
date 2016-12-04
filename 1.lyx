@@ -203,6 +203,84 @@ TODO: how to choose
 
 \begin_layout Standard
 4.
+ a.
+\begin_inset Formula 
+\begin{align*}
+\sqrt{\det A} & =\text{pf}A\\
+ & =\sum_{m\in M_{n}}\text{sign}(m)\prod_{\left(i,j\right)\in m}a_{i,j}\\
+ & =\sum_{m\in M_{n}}\text{sign}(m)\prod_{\left(i,j\right)\in m}2^{w_{ij}}\\
+ & =\sum_{m\in M_{n}}\text{sign}(m)2^{\sum_{\left(i,j\right)\in m}w_{\sum ij}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that 
+\begin_inset Formula $2^{W}$
+\end_inset
+
+ divides every element in the sum above, therefore 
+\begin_inset Formula $2^{2W}$
+\end_inset
+
+ divides 
+\begin_inset Formula $\det A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+However, since there is a unique perfect matching of minimal weight 
+\begin_inset Formula $m^{*}\in M_{n}$
+\end_inset
+
+, all elements in the determinant:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\det A=\sum_{m_{1}\in M_{n}}\sum_{m_{2}\in M_{n}}\text{sign}(m_{1})\text{sign}(m_{2})2^{\sum_{\left(i,j\right)\in m_{1}}w_{\sum ij}+\sum_{\left(i,j\right)\in m_{2}}w_{\sum ij}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+are divided by 
+\begin_inset Formula $2^{2W+1}$
+\end_inset
+
+, except the element 
+\begin_inset Formula $\text{2^{\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}+\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}}}=2^{2W}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Therefore 
+\begin_inset Formula $2^{2W+1}$
+\end_inset
+
+ does not divides the determinant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
  
 \end_layout
 
