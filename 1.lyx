@@ -156,7 +156,54 @@ So both have the same asymptotic complexity.
 \end_layout
 
 \begin_layout Standard
+2.
+ Multiplying a vector with a matrix is 
+\begin_inset Formula $o(n^{2})$
+\end_inset
 
+.
+ So we can choose a random vector 
+\begin_inset Formula $x$
+\end_inset
+
+ and verify wether 
+\begin_inset Formula $Cx=A(Bx)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+TODO: how to choose 
+\begin_inset Formula $x$
+\end_inset
+
+ to bound error probability?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ a.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ 
 \end_layout
 
 \end_body
