@@ -332,8 +332,8 @@ If
 \begin_inset Formula $(v,u)\in E$
 \end_inset
 
-, finding the third vertex can be done by simply checking the row the correspond
-s to 
+, finding the third vertex can be done by simply checking the row that correspon
+ds to 
 \begin_inset Formula $u$
 \end_inset
 
