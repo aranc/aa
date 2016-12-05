@@ -311,7 +311,7 @@ Choose
 3.
  a.
  We will multiply the adjacency matrix once, to know which vertices are
- reachable with excatly 2 steps.
+ reachable with exactly 2 steps.
 \end_layout
 
 \begin_layout Standard
@@ -349,8 +349,7 @@ ds to
 \begin_inset Formula $v$
 \end_inset
 
- in one step.
- 
+ using one step.
 \end_layout
 
 \begin_layout Standard
