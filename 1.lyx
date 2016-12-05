@@ -310,14 +310,47 @@ Choose
 \begin_layout Standard
 3.
  a.
- 
+ We will multiply the adjacency matrix once, to know which vertices are
+ reachable with 2 steps.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\phantom{A}$
+All vertices that are reachable with both one step and two steps, are part
+ of a triangle.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $u$
 \end_inset
 
+ and 
+\begin_inset Formula $v$
+\end_inset
 
+ are vertices in a triangle, and 
+\begin_inset Formula $(v,u)\in E$
+\end_inset
+
+, finding the third vertex can be done by simply checking the row the correspond
+s to 
+\begin_inset Formula $u$
+\end_inset
+
+ and the column that corresponds to 
+\begin_inset Formula $v$
+\end_inset
+
+, and searching for a vertex that is reachable from 
+\begin_inset Formula $u$
+\end_inset
+
+ and that is reaching to 
+\begin_inset Formula $v$
+\end_inset
+
+ in one step.
+ 
 \end_layout
 
 \begin_layout Standard
