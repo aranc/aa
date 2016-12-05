@@ -471,11 +471,111 @@ b.
 
 \begin_layout Standard
 5.
- By definition, 
-\begin_inset Formula $\left(\text{adj}A\right)_{ij}=(\mbox{-}1)^{i+j}\det A^{ji}$
+ Let's look at the determinant 
+\begin_inset Formula 
+\[
+\det A=\sum_{\sigma}\text{sign}(\sigma)A_{1\sigma(i)}...A_{n\sigma(n)}
+\]
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Each product is a possible simple path in a graph with 
+\begin_inset Formula $n$
+\end_inset
+
+ vertices.
+\end_layout
+
+\begin_layout Standard
+By definition, 
+\begin_inset Formula 
+\begin{align*}
+\text{adj}(A)_{ij} & =(\mbox{-}1)^{i+j}\text{det}A_{ji}\\
+ & =(\mbox{-}1)^{i+j}\sum_{\sigma}\text{sign}(\sigma)\prod_{\begin{array}{c}
+k\neq j\\
+\sigma(k)\neq i
+\end{array}}A_{k\sigma(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And each product is a simple path that does not have a link that is leaving
  
+\begin_inset Formula $j$
+\end_inset
+
+ or entering 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So it's all the possible simple paths from 
+\begin_inset Formula $i$
+\end_inset
+
+ to 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If such a path exists in the graph, we will put 
+\begin_inset Formula $1$
+\end_inset
+
+s in the 
+\begin_inset Formula $x_{pq}$
+\end_inset
+
+ that are in that path, and 
+\begin_inset Formula $0$
+\end_inset
+
+ in other 
+\begin_inset Formula $x_{pq}$
+\end_inset
+
+.
+ And we will get 
+\begin_inset Formula $\text{adj}(A)_{ij}=1$
+\end_inset
+
+ under that assignment, therefore 
+\begin_inset Formula $\text{adj}(A)_{ij}\not\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If no such path exists, than all products in the sum above will have some
+ 
+\begin_inset Formula $A_{pq}$
+\end_inset
+
+ that is equal to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ and 
+\begin_inset Formula $\text{adj}(A)_{ij}\equiv0$
+\end_inset
+
+
 \end_layout
 
 \end_body
