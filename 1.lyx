@@ -178,7 +178,7 @@ TODO: how to choose
 \begin_inset Formula $x$
 \end_inset
 
- to bound error probability?
+ to bound error probability? (maybe using zippel?)
 \end_layout
 
 \begin_layout Standard
@@ -281,6 +281,42 @@ Therefore
 
 \begin_layout Standard
 b.
+ If 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+ is the unique perfect matching of minimal weight in 
+\begin_inset Formula $G$
+\end_inset
+
+, and 
+\begin_inset Formula $(i,j)\in M$
+\end_inset
+
+, then removing vertices 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ from the graph
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ By definition, 
+\begin_inset Formula $\left(\text{adj}A\right)_{ij}=(\mbox{-}1)^{i+j}\det A^{ji}$
+\end_inset
+
  
 \end_layout
 
