@@ -156,29 +156,148 @@ So both have the same asymptotic complexity.
 \end_layout
 
 \begin_layout Standard
-2.
- Multiplying a vector with a matrix is 
-\begin_inset Formula $o(n^{2})$
+\begin_inset FormulaMacro
+\newcommand{\pr}{\text{Pr}}
 \end_inset
 
-.
- So we can choose a random vector 
+
+\end_layout
+
+\begin_layout Standard
+2.
+ The base idea is to choose a random vector 
 \begin_inset Formula $x$
 \end_inset
 
- and verify wether 
-\begin_inset Formula $Cx=A(Bx)$
+ and test if 
+\begin_inset Formula $Cx=A\left(Bx\right)$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-TODO: how to choose 
+If 
+\begin_inset Formula $C=AB$
+\end_inset
+
+, we will always get the correct answer.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $C\ne AB$
+\end_inset
+
+, we want
+\begin_inset Formula 
+\[
+\pr(\left(C-AB\right)x=0)\le\frac{1}{2}
+\]
+
+\end_inset
+
+Now, lets mark 
+\begin_inset Formula $D=C-AB$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+ as the i
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ row of 
+\begin_inset Formula $D$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\pr(\left(C-AB\right)x=0) & \le\sum_{i=1}^{n}\pr(D_{i}x=0)\\
+ & \le n\text{Poly}(x_{1},...,x_{n})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where Poly is a polynomial in 
+\begin_inset Formula $x_{1},...,x_{n}$
+\end_inset
+
+ of degree at most 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Schwartz-Zippel,
+\begin_inset Formula 
+\[
+\le\frac{n^{2}}{\left|S\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we need to choose the elements of 
 \begin_inset Formula $x$
 \end_inset
 
- to bound error probability? (maybe using zippel?)
+ from 
+\begin_inset Formula $S$
+\end_inset
+
+ such that,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{n^{2}}{\left|S\right|}\le\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Choose 
+\begin_inset Formula $S$
+\end_inset
+
+ to be 
+\begin_inset Formula $Z_{p}$
+\end_inset
+
+ with 
+\begin_inset Formula $p$
+\end_inset
+
+ a prime bigger than 
+\begin_inset Formula $2n^{2}$
+\end_inset
+
+, and we are done.
 \end_layout
 
 \begin_layout Standard
