@@ -341,7 +341,7 @@ ds to
 \begin_inset Formula $v$
 \end_inset
 
-, and searching for a vertex that is reachable from 
+, and searching for a vertex that is both reachable from 
 \begin_inset Formula $u$
 \end_inset
 
