@@ -360,6 +360,60 @@ ds to
 \end_layout
 
 \begin_layout Standard
+b.
+ We will multiply the adjacency matrix once, to know which vertices are
+ reachable with exactly 2 steps.
+ 
+\begin_inset Formula $\left(O(n^{\omega})\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will look at all the vertices pairs, that have both vertices in the pair
+ reach eachother in exactly 2 steps.
+ 
+\begin_inset Formula $\left(O(n^{2})\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Verifying if a pair is a simple 4-cycle and finding the cycle is a 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ operation (i.e.
+ find 2 different vertices that are between the input vertices).
+\end_layout
+
+\begin_layout Standard
+The trouble is, that doing it on 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+ possible vertex pairs, is not good enough.
+ What we need, is to show that there are no more than 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ pairs of vertices to test.
+\end_layout
+
+\begin_layout Standard
+TODO: complete this
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 4.
  a.
 \begin_inset Formula 
