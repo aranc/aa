@@ -493,27 +493,6 @@ Therefore
 
 \begin_layout Standard
 b.
- If 
-\begin_inset Formula $M^{*}$
-\end_inset
-
- is the unique perfect matching of minimal weight in 
-\begin_inset Formula $G$
-\end_inset
-
-, and 
-\begin_inset Formula $(i,j)\in M$
-\end_inset
-
-, then removing vertices 
-\begin_inset Formula $i$
-\end_inset
-
- and 
-\begin_inset Formula $j$
-\end_inset
-
- from the graph
 \end_layout
 
 \begin_layout Standard
@@ -548,7 +527,7 @@ Each product is a possible simple path in a graph with
 By definition, 
 \begin_inset Formula 
 \begin{align*}
-\text{adj}(A)_{ij} & =(\mbox{-}1)^{i+j}\text{det}A_{ji}\\
+\text{adj}(A)_{ij} & =(\mbox{-}1)^{i+j}\text{det}A^{ji}\\
  & =(\mbox{-}1)^{i+j}\sum_{\sigma}\text{sign}(\sigma)\prod_{\begin{array}{c}
 k\neq j\\
 \sigma(k)\neq i
