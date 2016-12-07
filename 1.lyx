@@ -588,7 +588,26 @@ If
 \begin_inset Formula $\{i,j\}$
 \end_inset
 
- was not originally in the perfect match of minimum weight, then 
+ was not originally in the perfect match of minimum weight, then the new
+ minimum weight 
+\begin_inset Formula $W^{*}$
+\end_inset
+
+ is larger than the previous minimum weight: 
+\begin_inset Formula $W^{*}>W$
+\end_inset
+
+.
+ We have 
+\begin_inset Formula $2^{W^{*}}|\left(2^{w_{ij}}\det A^{ij}\right)$
+\end_inset
+
+.
+ therefore 
+\begin_inset Formula $\frac{2^{w_{ij}}\det A^{ij}}{2^{2W}}=\left(\frac{2^{W^{*}}}{2^{W}}\right)\left(\frac{2^{w_{ij}}\det A^{ij}}{2^{2W^{*}}}\right)$
+\end_inset
+
+ which is always even.
 \end_layout
 
 \begin_layout Standard
