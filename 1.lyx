@@ -566,11 +566,11 @@ So
 \end_inset
 
 , but 
-\begin_inset Formula $2^{2w+1}$
+\begin_inset Formula $2^{2W+1}$
 \end_inset
 
  does not, therefore 
-\begin_inset Formula $\frac{2^{w_{ij}}\det A^{ij}}{2^{2w}}$
+\begin_inset Formula $\frac{2^{w_{ij}}\det A^{ij}}{2^{2W}}$
 \end_inset
 
  is odd.
