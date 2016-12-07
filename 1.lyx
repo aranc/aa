@@ -493,6 +493,113 @@ Therefore
 
 \begin_layout Standard
 b.
+ Let's look on 
+\begin_inset Formula $2^{w_{ij}}\det A_{ij}$
+\end_inset
+
+, this is the same as taking 
+\begin_inset Formula $A$
+\end_inset
+
+ and putting zeros in row 
+\begin_inset Formula $i$
+\end_inset
+
+, putting zeros in column 
+\begin_inset Formula $j$
+\end_inset
+
+, and finally putting 
+\begin_inset Formula $2^{w_{ij}}$
+\end_inset
+
+ in 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+, before taking the determinant of this new matrix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So it's like looking on all the simple paths that go through 
+\begin_inset Formula $\{i,j\}$
+\end_inset
+
+.
+ Or in other words, it's like removing all outgoing edges from 
+\begin_inset Formula $i$
+\end_inset
+
+ and all incoming connections to 
+\begin_inset Formula $j$
+\end_inset
+
+, except the edge (if exists) that goes from 
+\begin_inset Formula $i$
+\end_inset
+
+ to 
+\begin_inset Formula $j$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\{i,j\}$
+\end_inset
+
+ was originally in the perfect match of minimum weight, than it still is.
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $2^{2W}$
+\end_inset
+
+ divides 
+\begin_inset Formula $2^{w_{ij}}\det A$
+\end_inset
+
+, but 
+\begin_inset Formula $2^{2w+1}$
+\end_inset
+
+ does not, therefore 
+\begin_inset Formula $\frac{2^{w_{ij}}\det A}{2^{2w}}$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\{i,j\}$
+\end_inset
+
+ was not originally in the perfect match of minimum weight, 
 \end_layout
 
 \begin_layout Standard
