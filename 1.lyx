@@ -501,7 +501,7 @@ b.
 \begin_inset Formula $A$
 \end_inset
 
- and putting zeros in row 
+ and building a new matrix by putting zeros in row 
 \begin_inset Formula $i$
 \end_inset
 
@@ -603,7 +603,7 @@ If
 \end_inset
 
 .
- therefore 
+ Therefore 
 \begin_inset Formula $\frac{2^{w_{ij}}\det A^{ij}}{2^{2W}}=\left(\frac{2^{W^{*}}}{2^{W}}\right)\left(\frac{2^{w_{ij}}\det A^{ij}}{2^{2W^{*}}}\right)$
 \end_inset
 
