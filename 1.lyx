@@ -549,6 +549,11 @@ If
 \end_inset
 
  was originally in the perfect match of minimum weight, than it still is.
+ And 
+\begin_inset Formula $W$
+\end_inset
+
+ is still the minimum weight.
 \end_layout
 
 \begin_layout Standard
@@ -557,7 +562,7 @@ So
 \end_inset
 
  divides the new determinant, 
-\begin_inset Formula $2^{w_{ij}}\det A$
+\begin_inset Formula $2^{w_{ij}}\det A^{ij}$
 \end_inset
 
 , but 
@@ -565,7 +570,7 @@ So
 \end_inset
 
  does not, therefore 
-\begin_inset Formula $\frac{2^{w_{ij}}\det A}{2^{2w}}$
+\begin_inset Formula $\frac{2^{w_{ij}}\det A^{ij}}{2^{2w}}$
 \end_inset
 
  is odd.
@@ -583,7 +588,7 @@ If
 \begin_inset Formula $\{i,j\}$
 \end_inset
 
- was not originally in the perfect match of minimum weight, than 
+ was not originally in the perfect match of minimum weight, then 
 \end_layout
 
 \begin_layout Standard
