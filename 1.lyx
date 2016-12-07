@@ -494,7 +494,7 @@ Therefore
 \begin_layout Standard
 b.
  Let's look on 
-\begin_inset Formula $2^{w_{ij}}\det A_{ij}$
+\begin_inset Formula $2^{w_{ij}}\det A^{ij}$
 \end_inset
 
 , this is the same as taking 
@@ -528,28 +528,12 @@ b.
 \end_layout
 
 \begin_layout Standard
-So it's like looking on all the simple paths that go through 
+So the Pfaffian of the new Matrix, is like the Pfaffian of the original
+ matrix, but with only the perfect matches that include 
 \begin_inset Formula $\{i,j\}$
 \end_inset
 
 .
- Or in other words, it's like removing all outgoing edges from 
-\begin_inset Formula $i$
-\end_inset
-
- and all incoming connections to 
-\begin_inset Formula $j$
-\end_inset
-
-, except the edge (if exists) that goes from 
-\begin_inset Formula $i$
-\end_inset
-
- to 
-\begin_inset Formula $j$
-\end_inset
-
-,
 \end_layout
 
 \begin_layout Standard
@@ -572,7 +556,7 @@ So
 \begin_inset Formula $2^{2W}$
 \end_inset
 
- divides 
+ divides the new determinant, 
 \begin_inset Formula $2^{w_{ij}}\det A$
 \end_inset
 
@@ -599,7 +583,7 @@ If
 \begin_inset Formula $\{i,j\}$
 \end_inset
 
- was not originally in the perfect match of minimum weight, 
+ was not originally in the perfect match of minimum weight, than 
 \end_layout
 
 \begin_layout Standard
