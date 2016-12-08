@@ -371,39 +371,38 @@ b.
 \end_layout
 
 \begin_layout Standard
-We will look at all the vertices pairs, that have both vertices in the pair
- reach eachother in exactly 2 steps.
- 
-\begin_inset Formula $\left(O(n^{2})\right)$
+Vertices pairs 
+\begin_inset Formula $(u,v)$
 \end_inset
 
- 
+ where 
+\begin_inset Formula $\left(A^{2}\right)_{uv}=\left(A^{2}\right)_{vu}=1$
+\end_inset
+
+ are suspected to be part of a 4-cycle.
 \end_layout
 
 \begin_layout Standard
-Verifying if a pair is a simple 4-cycle and finding the cycle is a 
-\begin_inset Formula $O(n)$
+It's possible to have such 
+\begin_inset Formula $u$
 \end_inset
 
- operation (i.e.
- find 2 different vertices that are between the input vertices).
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ and not have a 4-cycle:
 \end_layout
 
 \begin_layout Standard
-The trouble is, that doing it on 
-\begin_inset Formula $O\left(n^{2}\right)$
+\begin_inset Graphics
+	filename pics/hw1_1.png
+	lyxscale 30
+	scale 30
+
 \end_inset
 
- possible vertex pairs, is not good enough.
- What we need, is to show that there are no more than 
-\begin_inset Formula $O(n)$
-\end_inset
 
- pairs of vertices to test.
-\end_layout
-
-\begin_layout Standard
-TODO: complete this
 \end_layout
 
 \begin_layout Standard
@@ -411,6 +410,56 @@ TODO: complete this
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+For a given pair 
+\begin_inset Formula $u,v$
+\end_inset
+
+, testing if they are part of a 4-cycle is an 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ operation.
+ Unfortunately, it seems that we may get 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ suspected pairs of vertices to test from the above procedure.
+\end_layout
+
+\begin_layout Standard
+Luckily, either we have at most 
+\begin_inset Formula $n$
+\end_inset
+
+ pairs to test, or, using the Pigeonhole principle, we have more than 
+\begin_inset Formula $n$
+\end_inset
+
+ pairs, but at least 
+\begin_inset Formula $2$
+\end_inset
+
+ of the first 
+\begin_inset Formula $n$
+\end_inset
+
+ pairs share the same vertex.
+ And therefore these 2 
+\begin_inset Quotes eld
+\end_inset
+
+pairs
+\begin_inset Quotes erd
+\end_inset
+
+ form a 4-cycle:
+\end_layout
+
+\begin_layout Standard
+add pictures here.
 \end_layout
 
 \begin_layout Standard
