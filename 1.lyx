@@ -225,7 +225,7 @@ th
 \begin_inset Formula 
 \begin{align*}
 \pr(\left(C-AB\right)x=0) & \le\sum_{i=1}^{n}\pr(D_{i}x=0)\\
- & \le n\pr\left(\text{Poly}(x_{1},...,x_{n})\right)
+ & \le n\pr\left(\text{Poly}(x_{1},...,x_{n})=0\right)
 \end{align*}
 
 \end_inset
@@ -310,13 +310,33 @@ Choose
 \begin_layout Standard
 3.
  a.
- We will multiply the adjacency matrix once, to know which vertices are
- reachable with exactly 2 steps.
+ We will multiply the adjacency matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ once, to know which vertices are reachable with exactly 2 steps.
+ This will take us 
+\begin_inset Formula $O(n^{w})$
+\end_inset
+
+ time.
 \end_layout
 
 \begin_layout Standard
-All vertices that are reachable with both one step and two steps, are part
- of a triangle.
+All vertices 
+\begin_inset Formula $u,v$
+\end_inset
+
+ that satisfy 
+\begin_inset Formula $A_{uv}=\left(A^{2}\right)_{vu}=1$
+\end_inset
+
+, are part of a triangle.
+ Finding them is 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -329,7 +349,7 @@ If
 \end_inset
 
  are vertices in a triangle, and 
-\begin_inset Formula $(v,u)\in E$
+\begin_inset Formula $A_{vu}=1$
 \end_inset
 
 , finding the third vertex can be done by simply checking the row that correspon
@@ -350,6 +370,19 @@ ds to
 \end_inset
 
  using one step.
+ This will take 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+All in all 
+\begin_inset Formula $O(n^{w})$
+\end_inset
+
+ time.
 \end_layout
 
 \begin_layout Standard
@@ -363,11 +396,6 @@ ds to
 b.
  We will multiply the adjacency matrix once, to know which vertices are
  reachable with exactly 2 steps.
- 
-\begin_inset Formula $\left(O(n^{\omega})\right)$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -383,7 +411,7 @@ Vertices pairs
 \end_layout
 
 \begin_layout Standard
-It's possible to have such 
+The caveat, is that it's possible to have such 
 \begin_inset Formula $u$
 \end_inset
 
@@ -403,6 +431,23 @@ It's possible to have such
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Let's call such structures triplets.
+ That is 
+\begin_inset Formula $u,v$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(A^{2}\right)_{uv}=\left(A^{2}\right)_{vu}=1$
+\end_inset
+
+, but 
+\begin_inset Formula $u,v$
+\end_inset
+
+ are not part of a 4-cycle.
 \end_layout
 
 \begin_layout Standard
