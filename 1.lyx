@@ -434,23 +434,6 @@ The caveat, is that it's possible to have such
 \end_layout
 
 \begin_layout Standard
-Let's call such structures triplets.
- That is 
-\begin_inset Formula $u,v$
-\end_inset
-
- such that 
-\begin_inset Formula $\left(A^{2}\right)_{uv}=\left(A^{2}\right)_{vu}=1$
-\end_inset
-
-, but 
-\begin_inset Formula $u,v$
-\end_inset
-
- are not part of a 4-cycle.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
@@ -488,23 +471,20 @@ Luckily, either we have at most
 \end_inset
 
  of the first 
-\begin_inset Formula $n$
+\begin_inset Formula $n+1$
 \end_inset
 
  pairs share the same vertex.
- And therefore these 2 
-\begin_inset Quotes eld
-\end_inset
-
-pairs
-\begin_inset Quotes erd
-\end_inset
-
- form a 4-cycle:
+ Since they share a common vertex, they must form a 4-cycle.
+ (It's impossible to have two triplets as pictured above share a common
+ vertex and not contain a 4-cycle).
 \end_layout
 
 \begin_layout Standard
-add pictures here.
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
