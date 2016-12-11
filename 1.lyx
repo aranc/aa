@@ -543,8 +543,12 @@ are divided by
 \begin_inset Formula $2^{2W+1}$
 \end_inset
 
-, except the element 
-\begin_inset Formula $\text{2^{\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}+\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}}}=2^{2W}$
+, except for the element 
+\begin_inset Formula 
+\[
+\text{2^{\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}+\sum_{\left(i,j\right)\in m^{*}}w_{\sum ij}}}=2^{2W}
+\]
+
 \end_inset
 
 .
