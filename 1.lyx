@@ -104,12 +104,12 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 
 \begin_layout Standard
 1.
- We can implement matrix squaring with matrix multiplication by multiplying
+ We can implement matrix squaring using matrix multiplication by multiplying
  a matrix by itself.
 \end_layout
 
 \begin_layout Standard
-We can implement matrix multiplication with matrix squaring, by squaring
+We can implement matrix multiplication using matrix squaring, by squaring
  the following block matrix:
 \end_layout
 
@@ -201,7 +201,7 @@ Now, lets mark
 \begin_inset Formula $D=C-AB$
 \end_inset
 
- and 
+, and 
 \begin_inset Formula $D_{i}$
 \end_inset
 
@@ -225,7 +225,7 @@ th
 \begin_inset Formula 
 \begin{align*}
 \pr(\left(C-AB\right)x=0) & \le\sum_{i=1}^{n}\pr(D_{i}x=0)\\
- & \le n\text{Poly}(x_{1},...,x_{n})
+ & \le n\pr\left(\text{Poly}(x_{1},...,x_{n})\right)
 \end{align*}
 
 \end_inset
