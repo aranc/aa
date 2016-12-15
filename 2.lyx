@@ -108,8 +108,7 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \begin_inset Formula $A$
 \end_inset
 
-.
- With 
+, With 
 \begin_inset Formula $0$
 \end_inset
 
@@ -144,6 +143,87 @@ s in the diagonal.
 \end_layout
 
 \begin_layout Standard
+We also have the transitive closure 
+\begin_inset Formula $(A+I)^{n}$
+\end_inset
+
+ at our disposal, using 
+\begin_inset Formula $O(\log n)$
+\end_inset
+
+ matrix squaring.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a.
+ We want to find the largest possible 
+\begin_inset Formula $d$
+\end_inset
+
+ where there is still a path between any two vertices.
+ We know that 
+\begin_inset Formula $0\le d\le n$
+\end_inset
+
+ (At most, it will pass through all vertices).
+\end_layout
+
+\begin_layout Standard
+We do this with a binary search.
+ At each 
+\begin_inset Quotes eld
+\end_inset
+
+guess
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $k$
+\end_inset
+
+, we test if 
+\begin_inset Formula $(A+I)^{k}=(A+I)^{n}$
+\end_inset
+
+.
+ We start with 
+\begin_inset Formula $k=n/2$
+\end_inset
+
+ and move upwards if not equal or downwards if equal.
+ We need at most 
+\begin_inset Formula $O(\log n)$
+\end_inset
+
+ guesses.
+\end_layout
+
+\begin_layout Standard
+We precompute 
+\begin_inset Formula $(A+I)^{2^{\ell}}$
+\end_inset
+
+ for 
+\begin_inset Formula $1\le\ell\le\log n$
+\end_inset
+
+, So computing 
+\begin_inset Formula $(A+I)^{k}$
+\end_inset
+
+...
+ TODO: think a bit about this 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
@@ -152,21 +232,6 @@ s in the diagonal.
 
 \begin_layout Standard
 b.
- supposedly in 
-\begin_inset Quotes eld
-\end_inset
-
-Zwick: All Pairs Shortest Paths in weighted directed graphs – exact and
- almost exact algorithm
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-scanning it now, actually the article is weighted.
- we want unweighted.
 \end_layout
 
 \begin_layout Standard
