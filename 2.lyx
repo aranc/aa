@@ -108,6 +108,37 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \end_layout
 
 \begin_layout Standard
+a.
+ can't find it yet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+ supposedly in 
+\begin_inset Quotes eld
+\end_inset
+
+Zwick: All Pairs Shortest Paths in weighted directed graphs – exact and
+ almost exact algorithm
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+scanning it now, actually the article is weighted.
+ we want unweighted.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
@@ -120,6 +151,10 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \end_layout
 
 \begin_layout Standard
+The trick is using the mod3 from Seidel.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
@@ -129,6 +164,10 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \begin_layout Standard
 3.
  112
+\end_layout
+
+\begin_layout Standard
+a.
 \end_layout
 
 \begin_layout Standard
