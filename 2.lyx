@@ -104,12 +104,43 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 
 \begin_layout Standard
 1.
- 115
-\end_layout
+ Look at the adjacency matrix 
+\begin_inset Formula $A$
+\end_inset
 
-\begin_layout Standard
-a.
- can't find it yet
+.
+ With 
+\begin_inset Formula $0$
+\end_inset
+
+s in the diagonal.
+ 
+\begin_inset Formula $A^{d}$
+\end_inset
+
+ is all the vertices that have a path between them with exactly 
+\begin_inset Formula $d$
+\end_inset
+
+ steps.
+ 
+\begin_inset Formula $(A+I)^{d}$
+\end_inset
+
+ is all the vertices that have a path between them with 
+\begin_inset Formula $d$
+\end_inset
+
+ steps or less.
+ Each boolean matrix multiplication is 
+\begin_inset Formula $O(n^{\omega}).$
+\end_inset
+
+ We need to solve each subquestion with at most 
+\begin_inset Formula $O(\log n$
+\end_inset
+
+) boolean matrix multiplications.
 \end_layout
 
 \begin_layout Standard
