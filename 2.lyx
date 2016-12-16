@@ -378,7 +378,7 @@ However, computing all
 \begin_inset Formula $d_{ik}-1<d_{ij}<d_{ik}+1$
 \end_inset
 
-, and only test module 3.
+, and only test modulo 3.
 \end_layout
 
 \begin_layout Standard
