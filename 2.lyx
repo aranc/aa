@@ -237,6 +237,48 @@ We precompute
 
 \begin_layout Standard
 b.
+ Precompute 
+\begin_inset Formula $(A+I)^{\left\lfloor 1+\epsilon\right\rfloor ^{\ell}}$
+\end_inset
+
+ and 
+\begin_inset Formula $(A+I)^{\left\lceil 1+\epsilon\right\rceil ^{\ell}}$
+\end_inset
+
+ for 
+\begin_inset Formula $1\le\ell\le\log_{1+\epsilon}n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We now know for each pair 
+\begin_inset Formula $i,j$
+\end_inset
+
+ an 
+\begin_inset Formula $\ell$
+\end_inset
+
+ such that
+\begin_inset Formula $\left\lfloor 1+\epsilon\right\rfloor ^{\ell}\le\text{distance}(i,j)\le\left\lceil 1+\epsilon\right\rceil ^{\ell}$
+\end_inset
+
+ or 
+\begin_inset Formula $\left\lceil 1+\epsilon\right\rceil ^{\ell}\le\text{distance}(i,j)\le\left\lfloor 1+\epsilon\right\rfloor ^{\ell+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So we know the distance up to a factor of 
+\begin_inset Formula $(1+\epsilon)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
