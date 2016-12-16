@@ -219,8 +219,13 @@ We precompute
 \begin_inset Formula $(A+I)^{k}$
 \end_inset
 
-...
- TODO: think a bit about this 
+ is a single multiplication of one of the previous guesses with one of the
+ precomputed matrices.
+ So each step takes 
+\begin_inset Formula $O(n^{\omega})$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
