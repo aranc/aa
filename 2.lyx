@@ -375,6 +375,7 @@ a.
 
 \begin_layout Standard
 b.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -386,6 +387,20 @@ b.
 
 \begin_layout Standard
 c.
+ Take the algorithm from the previous subquestion, and use it with 
+\begin_inset Formula $d=2^{\ell}$
+\end_inset
+
+ for 
+\begin_inset Formula $1\le\ell\le\log n$
+\end_inset
+
+.
+ That is, use the previous algorithm 
+\begin_inset Formula $\log n$
+\end_inset
+
+ times.
 \end_layout
 
 \begin_layout Standard
