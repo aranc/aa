@@ -299,11 +299,18 @@ So we know the distance up to a factor of
 \end_inset
 
 .
- We now need to determine the parity of 
+ We now need to determine 
 \begin_inset Formula $d_{ij}\in\left\{ 2t_{ij},2t_{ij}-1\right\} $
 \end_inset
 
- using Boolean
+ using Boolean matrix multiplications.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
