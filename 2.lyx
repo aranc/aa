@@ -322,11 +322,70 @@ So we know the distance up to a factor of
 
 \begin_layout Standard
 3.
- 112
+ 
 \end_layout
 
 \begin_layout Standard
 a.
+ Let 
+\begin_inset Formula $K$
+\end_inset
+
+ be a matrix where 
+\begin_inset Formula $K_{ij}=j$
+\end_inset
+
+.
+ Consider 
+\begin_inset Formula $KAB$
+\end_inset
+
+, if 
+\begin_inset Formula $i,j$
+\end_inset
+
+ have a unique witness, then 
+\begin_inset Formula $\left(KAB\right)_{ij}$
+\end_inset
+
+ will equal to that witness.
+ It's 
+\begin_inset Formula $O(1)$
+\end_inset
+
+ operation to verify a single witness, and therefore an 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ operation to verify all pairs.
+ All in all the dominant operation is the matrix multiplication, therefore
+ this algorithm takes 
+\begin_inset Formula $O(n^{\omega})$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c.
 \end_layout
 
 \begin_layout Standard
