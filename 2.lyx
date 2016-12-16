@@ -238,11 +238,11 @@ We precompute
 \begin_layout Standard
 b.
  Precompute 
-\begin_inset Formula $(A+I)^{\left\lfloor 1+\epsilon\right\rfloor ^{\ell}}$
+\begin_inset Formula $(A+I)^{\left\lfloor \left(1+\epsilon\right)^{\ell}\right\rfloor }$
 \end_inset
 
  and 
-\begin_inset Formula $(A+I)^{\left\lceil 1+\epsilon\right\rceil ^{\ell}}$
+\begin_inset Formula $(A+I)^{\left\lceil \left(1+\epsilon\right)^{\ell}\right\rceil }$
 \end_inset
 
  for 
@@ -262,12 +262,12 @@ We now know for each pair
 \begin_inset Formula $\ell$
 \end_inset
 
- such that
-\begin_inset Formula $\left\lfloor 1+\epsilon\right\rfloor ^{\ell}\le\text{distance}(i,j)\le\left\lceil 1+\epsilon\right\rceil ^{\ell}$
+ such that 
+\begin_inset Formula $\left\lfloor \left(1+\epsilon\right)^{\ell}\right\rfloor \le\text{distance}(i,j)\le\left\lceil \left(1+\epsilon\right)^{\ell}\right\rceil $
 \end_inset
 
  or 
-\begin_inset Formula $\left\lceil 1+\epsilon\right\rceil ^{\ell}\le\text{distance}(i,j)\le\left\lfloor 1+\epsilon\right\rfloor ^{\ell+1}$
+\begin_inset Formula $\left\lceil \left(1+\epsilon\right)^{\ell}\right\rceil \le\text{distance}(i,j)\le\left\lfloor \left(1+\epsilon\right)^{\ell+1}\right\rfloor $
 \end_inset
 
 .
