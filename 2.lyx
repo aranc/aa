@@ -383,8 +383,8 @@ However, computing all
 
 \begin_layout Standard
 We will define 
-\begin_inset Formula $T_{pq}^{\left(m\right)}=\begin{cases}
-1 & t_{pq}\text{mod }3=m\\
+\begin_inset Formula $T_{pq}^{\left(r\right)}=\begin{cases}
+1 & t_{pq}\text{ mod }3=r\\
 0 & \text{otherwise}
 \end{cases}$
 \end_inset
@@ -402,6 +402,26 @@ We will define
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The additional complexity is 3 more multiplications at each step: 
+\begin_inset Formula $AT^{(r)}$
+\end_inset
+
+, for 
+\begin_inset Formula $r=0,1,2$
+\end_inset
+
+.
+ Therefore we have the same asymptotic complexity.
 \end_layout
 
 \begin_layout Standard
