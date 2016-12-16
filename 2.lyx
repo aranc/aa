@@ -299,7 +299,7 @@ So we know the distance up to a factor of
 \end_inset
 
 .
- We now need to determine 
+ We now need to determine the parity of 
 \begin_inset Formula $d_{ij}\in\left\{ 2t_{ij},2t_{ij}-1\right\} $
 \end_inset
 
@@ -311,6 +311,97 @@ So we know the distance up to a factor of
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We have seen that 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+ is odd iff there exists a vertex 
+\begin_inset Formula $k$
+\end_inset
+
+ that is a neighbor of 
+\begin_inset Formula $i$
+\end_inset
+
+, and 
+\begin_inset Formula $t_{kj}<t_{ij}$
+\end_inset
+
+.
+ In order to find if such a vertex exists, we would like to look on the
+ matrix 
+\begin_inset Formula $T_{pq}^{m}=\begin{cases}
+1 & t_{pq}<m\\
+0 & \text{otherwise}
+\end{cases}$
+\end_inset
+
+ (assuming unconnected vertices have a weight of 
+\begin_inset Formula $\text{+}\infty$
+\end_inset
+
+).
+ And declare 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+ as odd iff 
+\begin_inset Formula $\left(AT^{t_{ij}}\right)_{ij}=1$
+\end_inset
+
+.
+ (The multiplication is Boolean matrix multiplication.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ is the adjacency matrix).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, computing all 
+\begin_inset Formula $AT^{m}$
+\end_inset
+
+ is too costly.
+ Therefore we will use the fact that 
+\begin_inset Formula $d_{ik}-1<d_{ij}<d_{ik}+1$
+\end_inset
+
+, and only test module 3.
+\end_layout
+
+\begin_layout Standard
+We will define 
+\begin_inset Formula $T_{pq}^{\left(m\right)}=\begin{cases}
+1 & t_{pq}\text{mod }3=m\\
+0 & \text{otherwise}
+\end{cases}$
+\end_inset
+
+, and will declare 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+ as odd iff 
+\begin_inset Formula $AT_{ij}^{(r)}=1$
+\end_inset
+
+, where 
+\begin_inset Formula $r=t_{ij}-1\text{ mod }3$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -412,7 +503,7 @@ c.
 
 \begin_layout Standard
 4.
- 126
+ 126Assu
 \end_layout
 
 \end_body
