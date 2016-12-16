@@ -131,7 +131,7 @@ s in the diagonal.
 \end_inset
 
  steps or less.
- Each boolean matrix multiplication is 
+ Each Boolean matrix multiplication is 
 \begin_inset Formula $O(n^{\omega}).$
 \end_inset
 
@@ -139,7 +139,7 @@ s in the diagonal.
 \begin_inset Formula $O(\log n$
 \end_inset
 
-) boolean matrix multiplications.
+) Boolean matrix multiplications.
 \end_layout
 
 \begin_layout Standard
@@ -290,11 +290,20 @@ So we know the distance up to a factor of
 
 \begin_layout Standard
 2.
- 109
-\end_layout
+ After applying the algorithm recursively, we have the distances 
+\begin_inset Formula $t_{ij}$
+\end_inset
 
-\begin_layout Standard
-The trick is using the mod3 from Seidel.
+ of 
+\begin_inset Formula $G^{2}=\left\langle V,\left\{ \left(i,j\right)\in E|\left(i,j\right)\in E\vee\left(\exists k:\,\left(i,k\right)\in E\wedge\left(k,j\right)\in E\right)\right\} \right\rangle $
+\end_inset
+
+.
+ We now need to determine the parity of 
+\begin_inset Formula $d_{ij}\in\left\{ 2t_{ij},2t_{ij}-1\right\} $
+\end_inset
+
+ using Boolean
 \end_layout
 
 \begin_layout Standard
