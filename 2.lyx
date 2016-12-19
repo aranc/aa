@@ -433,22 +433,31 @@ The additional complexity is 3 more multiplications at each step:
 
 \begin_layout Standard
 3.
- 
+ In the folowing subquestions, we are interested in the witnesses of the
+ multiplication between 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 a.
  Let 
-\begin_inset Formula $K$
+\begin_inset Formula $J$
 \end_inset
 
  be a matrix where 
-\begin_inset Formula $K_{ij}=j$
+\begin_inset Formula $J_{ij}=j$
 \end_inset
 
 .
  Consider 
-\begin_inset Formula $KAB$
+\begin_inset Formula $JAB$
 \end_inset
 
 , if 
@@ -456,7 +465,7 @@ a.
 \end_inset
 
  have a unique witness, then 
-\begin_inset Formula $\left(KAB\right)_{ij}$
+\begin_inset Formula $\left(JAB\right)_{ij}$
 \end_inset
 
  will equal to that witness.
@@ -486,7 +495,156 @@ a.
 
 \begin_layout Standard
 b.
- 
+ We want to sample 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+ intermediate vertices enough times, to reduce the probability of some witnesses
+ left out below 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On each sampling, we will choose 
+\begin_inset Formula $1\le k_{1}\le...\le k_{m}\le n$
+\end_inset
+
+, 
+\begin_inset Formula $m=\frac{n}{d}$
+\end_inset
+
+ indexes, and will look on the sub-matices multiplication 
+\begin_inset Formula $JA_{*,K}B_{K,*}$
+\end_inset
+
+.
+ Similarly to the previous subquestion, we will successfully extract a witness
+ for a pair 
+\begin_inset Formula $i,j$
+\end_inset
+
+, if there is exactly one witness at at least one sampling.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's calculate the probability that a pair 
+\begin_inset Formula $i,j$
+\end_inset
+
+ with number of witnesses 
+\begin_inset Formula $w:\,\,d\le w\le2d$
+\end_inset
+
+ will not have a witness found after a single sampling.
+\end_layout
+
+\begin_layout Standard
+At each sample we with replacement 
+\begin_inset Formula $\frac{n}{d}$
+\end_inset
+
+ possible intermediate vertices.
+ The probability that exactly one of them is a witness: 
+\begin_inset Formula 
+\begin{align*}
+\frac{n}{d}\frac{w}{n}\left(1-\frac{w}{n}\right)^{\nicefrac{n}{d}-1} & =\frac{w}{d}\left(1-\frac{w}{n}\right)^{\nicefrac{n}{d}-1}\\
+ & \le\frac{2d}{d}\left(1-\frac{d}{n}\right)^{\nicefrac{n}{d}-1}\\
+ & \le2\left(1-\frac{d}{n}\right)^{\nicefrac{n}{d}}\\
+ & \le\frac{2}{e}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence, we just need to sample (
+\begin_inset Formula $S$
+\end_inset
+
+ times) more than,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1-\frac{2}{e}\right)^{S}\le\frac{1}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\log\frac{e-2}{e}\le\mbox{-}\log n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\ge\frac{\log n}{\log\frac{e}{e-2}}\le0.752\log n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Afterwards we will make an additional pass on the vertices pairs.
+ from 
+\begin_inset Formula $AB$
+\end_inset
+
+ (the usual non-boolean multiplication), we know which pairs have 
+\begin_inset Formula $d\le\text{num\_witnesses}\le2d$
+\end_inset
+
+, and we will find witnesses in the slow explicit way (test for every 
+\begin_inset Formula $k$
+\end_inset
+
+ if 
+\begin_inset Formula $A_{ik}=B_{kj}=1$
+\end_inset
+
+).
+ But since only less than 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ of the vertices pairs will need to be corrected in that way, the correction
+ will take only 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ time.
 \end_layout
 
 \begin_layout Standard
