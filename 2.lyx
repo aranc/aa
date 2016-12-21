@@ -702,7 +702,19 @@ c.
 \end_layout
 
 \begin_layout Standard
+This can be fixed by treating values larger than 
+\begin_inset Formula $Ms$
+\end_inset
 
+ as 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ for the iteration.
+\end_layout
+
+\begin_layout Standard
+This is legitimate because
 \end_layout
 
 \end_body
