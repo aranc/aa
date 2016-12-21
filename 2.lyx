@@ -714,7 +714,12 @@ This can be fixed by treating values larger than
 \end_layout
 
 \begin_layout Standard
-This is legitimate because
+This is legitimate because at each iteration, we only expect to find shortest
+ paths that use at most 
+\begin_inset Formula $s$
+\end_inset
+
+ edges.
 \end_layout
 
 \end_body
