@@ -681,7 +681,28 @@ c.
 
 \begin_layout Standard
 4.
- 126Assu
+ On every multiplication, the maximum value being multiplied may grow by
+ a factor of 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Since we are choosing rows and columns at random, we may multiply by 
+\begin_inset Formula $2$
+\end_inset
+
+ the maximum value over and over again.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
