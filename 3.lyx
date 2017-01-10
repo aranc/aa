@@ -157,6 +157,59 @@ If the outputs of a comparator are split, one is connected to a network
 
 \begin_layout Standard
 2.
+ a.
+ bla bla
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The justification for the usage of the 0-1 principle is the same as for
+ regular sorting, let 
+\begin_inset Formula $x_{1},...,x_{n}$
+\end_inset
+
+ be a bitonic sequence that is mapped to 
+\begin_inset Formula $y_{1},...,y_{n}$
+\end_inset
+
+ where 
+\begin_inset Formula $y_{i}>y_{i+1}$
+\end_inset
+
+ for some 
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f(x)=1$
+\end_inset
+
+ if 
+\begin_inset Formula $x\ge y_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $0$
+\end_inset
+
+ otherwise.
+ The network maps 
+\begin_inset Formula $f(x_{1}),...,f(x_{n})$
+\end_inset
+
+ to 
+\begin_inset Formula $f(y_{1}),...,f(y_{i})=1,f(y_{i+1})=0...,f(y_{n})$
+\end_inset
+
+.
+ Thus the network does not sort all bitonic 0-1 inputs.
  
 \end_layout
 
