@@ -103,7 +103,61 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \end_layout
 
 \begin_layout Standard
+1.
+ The difference between a sorting network, and a sorting network in standard
+ form, is that in standard form the output of comparators must be low-above
+ and high-below.
+ If the output of a 
+\begin_inset Quotes eld
+\end_inset
 
+reversed
+\begin_inset Quotes erd
+\end_inset
+
+ comparator is connected to another comparator, we can reverse the inputs
+ of the second comparator, and use a 
+\begin_inset Quotes eld
+\end_inset
+
+standard
+\begin_inset Quotes erd
+\end_inset
+
+ comparator instead of the first one.
+ Not modifying the network and its number of comparators.
+\end_layout
+
+\begin_layout Standard
+If the output of a comparator is connected directly to an output wire of
+ the sorting network, than the comparator must be 
+\begin_inset Quotes eld
+\end_inset
+
+standard
+\begin_inset Quotes erd
+\end_inset
+
+, because the output wires have sorted values.
+\end_layout
+
+\begin_layout Standard
+If the outputs of a comparator are split, one is connected to a network
+ output wire and the other is connected to another comparator, than similarly
+ to the first case, we can reverse the comparator, and reverse which wire
+ goes to the network output and which wire goes to another comparator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
 \end_layout
 
 \end_body
