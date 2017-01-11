@@ -265,7 +265,69 @@ half cleaner
 \end_layout
 
 \begin_layout Standard
+We already know from class that the half-cleaner handles correctly strictly
+ bitonic sequences.
+\end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The half-cleaner compares each input 
+\begin_inset Formula $i$
+\end_inset
+
+ with input 
+\begin_inset Formula $i+n/2$
+\end_inset
+
+ (for 
+\begin_inset Formula $1\le i\le n/2$
+\end_inset
+
+).
+ So when we perform a cyclic shift on the inputs, we are still comparing
+ the same input pairs.
+ Additionally, pairs that are being matched, must belong to different halves,
+ both before and after the cyclic shift on the input, because they have
+ a distance of 
+\begin_inset Formula $n/2$
+\end_inset
+
+ between them.
+ Therefore the two halves still contain the same elements, altough in different
+ order than before we did a cyclic shift on the input.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that each half contain the same outpus as before, only cyclic-shifted
+ withing the half.
+ Since the half-cleaner handles correctly strict bitonic sequences.
+ When the input is a cyclic shift of a bitonic sequence, each half will
+ also contain a cyclic shift of a bitonic sequence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+  
 \end_layout
 
 \end_body
