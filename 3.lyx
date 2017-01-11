@@ -235,7 +235,30 @@ The justification for the usage of the 0-1 principle is the same as for
 
 \begin_layout Standard
 b.
- 
+ Using the alternative recursive definition given in class, we only need
+ to show that the 
+\begin_inset Quotes eld
+\end_inset
+
+half cleaner
+\begin_inset Quotes erd
+\end_inset
+
+ handles correctly any cyclic shift of a bitonic sequence.
+ That is, the output of the 
+\begin_inset Quotes eld
+\end_inset
+
+half cleaner
+\begin_inset Quotes erd
+\end_inset
+
+ should be two bitonic sequences (one at each half), where every element
+ of the top half is less than or equal to every element of the bottom half.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
