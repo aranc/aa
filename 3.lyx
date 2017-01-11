@@ -158,7 +158,21 @@ If the outputs of a comparator are split, one is connected to a network
 \begin_layout Standard
 2.
  a.
- bla bla
+ The proof for a bitonic sequence is similar to the proof given in class
+ for a strict bitonic sequence.
+ The odd and even subsequences of a cyclic shift of a bitonic sequence,
+ are also a cyclic shift of a bitonic sequence.
+ By induction they are sorted correctly.
+ The difference between the number of 
+\begin_inset Formula $0$
+\end_inset
+
+'s in the two sorted sequences is one of 
+\begin_inset Formula $-1,0,1$
+\end_inset
+
+.
+ Final level of comparators fixes the problem.
 \end_layout
 
 \begin_layout Standard
@@ -210,6 +224,17 @@ The justification for the usage of the 0-1 principle is the same as for
 
 .
  Thus the network does not sort all bitonic 0-1 inputs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
  
 \end_layout
 
