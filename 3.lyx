@@ -354,6 +354,38 @@ b.
 
 \begin_layout Standard
 c.
+ From [Miltersen-Paterson-Tauri (1996)], we have 
+\begin_inset Formula $M(n,m)\ge\frac{1}{2}(n+m)\log m+O(m)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $M(n,n)\ge(\frac{1}{2}n)2\log n+O(n)$
+\end_inset
+
+.
+ Since every level can have at most 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ comparators, we need at least 
+\begin_inset Formula $2\log n$
+\end_inset
+
+ layers.
+ Since 
+\begin_inset Formula $2\log n>\log2n$
+\end_inset
+
+ for 
+\begin_inset Formula $n>2$
+\end_inset
+
+, the depth is at least 
+\begin_inset Formula $\text{log}2n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
