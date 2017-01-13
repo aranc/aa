@@ -367,6 +367,32 @@ a.
 
 \begin_layout Standard
 b.
+  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lets look on an item from the first half of the input, it might end up in
+ the bottom half of the output, if there are 
+\begin_inset Formula $n/2$
+\end_inset
+
+ inputs that are smaller than it.
+ Comparing a number against 
+\begin_inset Formula $n/2$
+\end_inset
+
+ other arbitrary numbers, will take at least 
+\begin_inset Formula $\log n/2$
+\end_inset
+
+ parallel steps.
 \end_layout
 
 \begin_layout Standard
