@@ -327,7 +327,33 @@ We see that each half contain the same outpus as before, only cyclic-shifted
 
 \begin_layout Standard
 3.
-  
+\end_layout
+
+\begin_layout Standard
+a.
+ TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c.
 \end_layout
 
 \begin_layout Standard
@@ -343,7 +369,11 @@ We see that each half contain the same outpus as before, only cyclic-shifted
 
 \begin_layout Standard
 a.
- If 
+ TODO: finish this
+\end_layout
+
+\begin_layout Standard
+If 
 \begin_inset Formula $C$
 \end_inset
 
@@ -376,15 +406,149 @@ a.
 \end_layout
 
 \begin_layout Standard
-In the ideal distribution, 
+Since 
 \begin_inset Formula $C$
 \end_inset
 
-'s parent has 
+ is currently empty, all the items in the network are contained in the descendan
+ts of 
+\begin_inset Formula $C$
+\end_inset
+
+ and in nodes above 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ The nodes above 
+\begin_inset Formula $C$
+\end_inset
+
+ contain 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+in each level
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset Formula $\text{(number of bags in level)*(fraction of items that are \ensuremath{C}-native) items that are \ensuremath{C}-native. That is \ensuremath{2^{i-1}*\frac{1}{2}=2^{i-2}}}$
+\end_inset
+
+ in the level above 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $2^{i-3}*\frac{1}{2^{3}}=2^{i-6}$
+\end_inset
+
+ in the level of 
+\begin_inset Formula $C$
+\end_inset
+
+'s grand-grandparent.
+ And so on.
+ Summing all the levels above, we get that the amount of 
+\begin_inset Formula $C$
+\end_inset
+
+-native items they contain is 
+\begin_inset Formula $2^{i-2}\left(1+\frac{1}{2^{4}}+\left(\frac{1}{2^{4}}\right)^{2}+...\right)\Rightarrow2^{i-2}\left(\frac{1}{1-\frac{1}{2^{4}}}\right)=\left(2^{i-2}\right)\left(\frac{2^{4}}{2^{4}-1}\right)$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
-TODO: complete this
+equal amount of items from bags at 
+\begin_inset Formula $C$
+\end_inset
+
+'s level, therefore 
+\begin_inset Formula $\frac{1}{\text{num of bags at \ensuremath{C}'s level}}=\frac{1}{2^{i}}$
+\end_inset
+
+ of their items are 
+\begin_inset Formula $C$
+\end_inset
+
+-native.
+ The nodes below 
+\begin_inset Formula $C$
+\end_inset
+
+ contain 
+\begin_inset Formula $\left(\text{num of bags at \ensuremath{C}'s level}\right)$
+\end_inset
+
+ subtrees, each with identical number of items.
+ Only the subtree below 
+\begin_inset Formula $C$
+\end_inset
+
+ contains 
+\begin_inset Formula $C$
+\end_inset
+
+-native items, so 
+\begin_inset Formula $\frac{1}{\text{num of bags at \ensuremath{C}'s level}}=\frac{1}{2^{i}}$
+\end_inset
+
+ of the items in the nodes below 
+\begin_inset Formula $C$
+\end_inset
+
+'s level are 
+\begin_inset Formula $C$
+\end_inset
+
+-native as well.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All in all, the distribution contains 
+\begin_inset Formula $\frac{n}{2^{i}}$
+\end_inset
+
+ items that are 
+\begin_inset Formula $C$
+\end_inset
+
+-native, and there are 
+\begin_inset Formula $\frac{n}{2^{i}}$
+\end_inset
+
+ 
+\begin_inset Formula $C$
+\end_inset
+
+-native items in the network.
 \end_layout
 
 \begin_layout Standard
