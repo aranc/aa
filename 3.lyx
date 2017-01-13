@@ -341,5 +341,189 @@ We see that each half contain the same outpus as before, only cyclic-shifted
 4.
 \end_layout
 
+\begin_layout Standard
+a.
+ If 
+\begin_inset Formula $C$
+\end_inset
+
+ is at the ith level from the root, (and the root is 0 levels from the root),
+ than there are 
+\begin_inset Formula $2^{i}$
+\end_inset
+
+ bags in the same level as 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $C$
+\end_inset
+
+ has 
+\begin_inset Formula $\frac{n}{2^{i}}$
+\end_inset
+
+ native items.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the ideal distribution, 
+\begin_inset Formula $C$
+\end_inset
+
+'s parent has 
+\end_layout
+
+\begin_layout Standard
+TODO: complete this
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+ Our termination condition is 
+\begin_inset Formula $b_{leaf}<\frac{1}{\lambda}$
+\end_inset
+
+.
+ At the leafs we have at most 2 items, 
+\begin_inset Formula $m\le2$
+\end_inset
+
+ (clause 2 of the invariant).
+ If 
+\begin_inset Formula $2\left\lfloor \lambda b\right\rfloor +1<m=2$
+\end_inset
+
+, then 
+\begin_inset Formula $b<\frac{1}{\lambda}$
+\end_inset
+
+, which is our termination condition.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c.
+ From clause 3 of the invariant at each node 
+\begin_inset Formula $m_{node}<n\nu^{t}A^{d}=b$
+\end_inset
+
+, so for each ancestor of 
+\begin_inset Formula $B$
+\end_inset
+
+, we have 
+\begin_inset Formula $m_{ancstor}<b/A^{i}$
+\end_inset
+
+ for some 
+\begin_inset Formula $i>0$
+\end_inset
+
+ (
+\begin_inset Formula $i=1$
+\end_inset
+
+ for the parent and its siblings, 
+\begin_inset Formula $i=2$
+\end_inset
+
+ for the grandparent and its siblings, etc).
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\frac{b}{A}<1$
+\end_inset
+
+, we have 
+\begin_inset Formula $m<1$
+\end_inset
+
+ for all ancestors of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Therefore they are empty.
+\end_layout
+
+\begin_layout Standard
+Furthermore
+\begin_inset Formula $m$
+\end_inset
+
+ must be even, because if it was odd, 
+\begin_inset Formula $B$
+\end_inset
+
+ would have sent an item upwards in the next step, which is impossible since
+ all ancestors are empty from now on.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ We only used the third parameter when accounting for the classification
+ error at 
+\begin_inset Formula $P$
+\end_inset
+
+, when bounding the case of 1-strangers.
+ So we only change
+\begin_inset Formula 
+\[
+2\lambda\epsilon A+\frac{\epsilon\lambda}{A}+\frac{\epsilon}{2A}+\frac{2\lambda\epsilon A}{1-\left(2\epsilon A\right)^{2}}+\frac{1}{8A^{3}-2A}\le\lambda\nu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to
+\begin_inset Formula 
+\[
+2\lambda\epsilon A+\frac{\epsilon\lambda}{A}+\frac{\epsilon_{0}}{2A}+\frac{2\lambda\epsilon A}{1-\left(2\epsilon A\right)^{2}}+\frac{1}{8A^{3}-2A}\le\lambda\nu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That is, the third element from the left in the above inequality.
+\end_layout
+
 \end_body
 \end_document
