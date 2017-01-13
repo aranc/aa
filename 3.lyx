@@ -367,7 +367,7 @@ a.
 
 \begin_layout Standard
 b.
-  
+ 
 \end_layout
 
 \begin_layout Standard
@@ -451,7 +451,6 @@ c.
 
 \begin_layout Standard
 a.
- TODO: finish this
 \end_layout
 
 \begin_layout Standard
@@ -492,118 +491,21 @@ Since
 \begin_inset Formula $C$
 \end_inset
 
- is currently empty, all the items in the network are contained in the descendan
-ts of 
+ is currently empty, all the items in the network are contained in the nodes
+ below and above 
 \begin_inset Formula $C$
 \end_inset
 
- and in nodes above 
-\begin_inset Formula $C$
-\end_inset
-
-.
- The nodes above 
-\begin_inset Formula $C$
-\end_inset
-
- contain 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-in each level
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- 
-\begin_inset Formula $\text{(number of bags in level)*(fraction of items that are \ensuremath{C}-native) items that are \ensuremath{C}-native. That is \ensuremath{2^{i-1}*\frac{1}{2}=2^{i-2}}}$
-\end_inset
-
- in the level above 
-\begin_inset Formula $C$
-\end_inset
-
-, 
-\begin_inset Formula $2^{i-3}*\frac{1}{2^{3}}=2^{i-6}$
-\end_inset
-
- in the level of 
-\begin_inset Formula $C$
-\end_inset
-
-'s grand-grandparent.
- And so on.
- Summing all the levels above, we get that the amount of 
-\begin_inset Formula $C$
-\end_inset
-
--native items they contain is 
-\begin_inset Formula $2^{i-2}\left(1+\frac{1}{2^{4}}+\left(\frac{1}{2^{4}}\right)^{2}+...\right)\Rightarrow2^{i-2}\left(\frac{1}{1-\frac{1}{2^{4}}}\right)=\left(2^{i-2}\right)\left(\frac{2^{4}}{2^{4}-1}\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-equal amount of items from bags at 
-\begin_inset Formula $C$
-\end_inset
-
-'s level, therefore 
-\begin_inset Formula $\frac{1}{\text{num of bags at \ensuremath{C}'s level}}=\frac{1}{2^{i}}$
+'s level.
+ We need to show that 
+\begin_inset Formula $\frac{1}{2^{i}}$
 \end_inset
 
  of their items are 
 \begin_inset Formula $C$
 \end_inset
 
--native.
- The nodes below 
-\begin_inset Formula $C$
-\end_inset
-
- contain 
-\begin_inset Formula $\left(\text{num of bags at \ensuremath{C}'s level}\right)$
-\end_inset
-
- subtrees, each with identical number of items.
- Only the subtree below 
-\begin_inset Formula $C$
-\end_inset
-
- contains 
-\begin_inset Formula $C$
-\end_inset
-
--native items, so 
-\begin_inset Formula $\frac{1}{\text{num of bags at \ensuremath{C}'s level}}=\frac{1}{2^{i}}$
-\end_inset
-
- of the items in the nodes below 
-\begin_inset Formula $C$
-\end_inset
-
-'s level are 
-\begin_inset Formula $C$
-\end_inset
-
--native as well.
- 
+-native when constructing according to the ideal distribution.
 \end_layout
 
 \begin_layout Standard
@@ -614,23 +516,146 @@ equal amount of items from bags at
 \end_layout
 
 \begin_layout Standard
-All in all, the distribution contains 
-\begin_inset Formula $\frac{n}{2^{i}}$
-\end_inset
-
- items that are 
+For the nodes below: each bag in 
 \begin_inset Formula $C$
 \end_inset
 
--native, and there are 
-\begin_inset Formula $\frac{n}{2^{i}}$
+'s level has a subtree below it, all these 
+\begin_inset Formula $2^{i}$
+\end_inset
+
+ subtrees have the same number of items (Clause 2 of the invariant), but
+ only 
+\begin_inset Formula $C$
+\end_inset
+
+'s subtree is composed of 
+\begin_inset Formula $C$
+\end_inset
+
+-native items.
+ Therefore 
+\begin_inset Formula $\frac{1}{2^{i}}$
+\end_inset
+
+ of the items in the bags below 
+\begin_inset Formula $C$
+\end_inset
+
+'s level are 
+\begin_inset Formula $C$
+\end_inset
+
+-native.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the nodes above: Each level above 
+\begin_inset Formula $C$
+\end_inset
+
+, say the 
+\begin_inset Formula $(i-k)$
+\end_inset
+
+th level, 
+\begin_inset Formula $2^{i-k}$
+\end_inset
+
+ bags, each containing the same number of items 
+\begin_inset Formula $m_{i-k}$
+\end_inset
+
+.
+ In the level above 
+\begin_inset Formula $C$
+\end_inset
+
+, level 
+\begin_inset Formula $i-1$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{1}{2}m_{i-1}$
+\end_inset
+
+ items specified as 
+\begin_inset Formula $C$
+\end_inset
+
+-native in the ideal distribution.
+ Two levels above that, in level 
+\begin_inset Formula $i-3$
+\end_inset
+
+, there are 
+\begin_inset Formula $\frac{1}{8}m_{i-3}$
 \end_inset
 
  
 \begin_inset Formula $C$
 \end_inset
 
--native items in the network.
+-native items.
+ And in general, the 
+\begin_inset Formula $i-k$
+\end_inset
+
+ level has 
+\begin_inset Formula $\frac{1}{2^{k}}m_{i-k}$
+\end_inset
+
+ 
+\begin_inset Formula $C$
+\end_inset
+
+-native items.
+ Also, in the 
+\begin_inset Formula $i-k$
+\end_inset
+
+ level, we have 
+\begin_inset Formula $2^{i-k}$
+\end_inset
+
+ bags, each with 
+\begin_inset Formula $m_{i-k}$
+\end_inset
+
+ items.
+ So the proportion of 
+\begin_inset Formula $C$
+\end_inset
+
+-native items at each non-empty level above 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $\left(\frac{1}{2^{k}}m_{i-k}\right)/\left(2^{i-k}m_{i-k}\right)=\frac{1}{2^{i}}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\frac{1}{2^{i}}$
+\end_inset
+
+ of the items in the bags above 
+\begin_inset Formula $C$
+\end_inset
+
+'s level are 
+\begin_inset Formula $C$
+\end_inset
+
+-native.
 \end_layout
 
 \begin_layout Standard
