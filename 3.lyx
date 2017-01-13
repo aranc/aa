@@ -561,11 +561,11 @@ For the nodes above: Each level above
 \begin_inset Formula $C$
 \end_inset
 
-, say the 
+, for example the 
 \begin_inset Formula $(i-k)$
 \end_inset
 
-th level, 
+th level, has 
 \begin_inset Formula $2^{i-k}$
 \end_inset
 
@@ -574,7 +574,15 @@ th level,
 \end_inset
 
 .
- In the level above 
+ All in all 
+\begin_inset Formula $2^{i-k}m_{i-k}$
+\end_inset
+
+ items in that level.
+\end_layout
+
+\begin_layout Standard
+In the level above 
 \begin_inset Formula $C$
 \end_inset
 
@@ -582,11 +590,11 @@ th level,
 \begin_inset Formula $i-1$
 \end_inset
 
-, 
+, there are 
 \begin_inset Formula $\frac{1}{2}m_{i-1}$
 \end_inset
 
- items specified as 
+ items that are specified as 
 \begin_inset Formula $C$
 \end_inset
 
@@ -617,20 +625,10 @@ th level,
 \end_inset
 
 -native items.
- Also, in the 
-\begin_inset Formula $i-k$
-\end_inset
+\end_layout
 
- level, we have 
-\begin_inset Formula $2^{i-k}$
-\end_inset
-
- bags, each with 
-\begin_inset Formula $m_{i-k}$
-\end_inset
-
- items.
- So the proportion of 
+\begin_layout Standard
+So the proportion of 
 \begin_inset Formula $C$
 \end_inset
 
@@ -639,11 +637,14 @@ th level,
 \end_inset
 
  is 
-\begin_inset Formula $\left(\frac{1}{2^{k}}m_{i-k}\right)/\left(2^{i-k}m_{i-k}\right)=\frac{1}{2^{i}}$
+\begin_inset Formula 
+\[
+\left(\frac{1}{2^{k}}m_{i-k}\right)/\left(2^{i-k}m_{i-k}\right)=\frac{1}{2^{i}}
+\]
+
 \end_inset
 
-.
- Therefore 
+Therefore 
 \begin_inset Formula $\frac{1}{2^{i}}$
 \end_inset
 
