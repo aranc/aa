@@ -331,7 +331,31 @@ We see that each half contain the same outpus as before, only cyclic-shifted
 
 \begin_layout Standard
 a.
- TODO
+ We will represent the path from the output wire to the 
+\begin_inset Formula $k$
+\end_inset
+
+ input wires as a binary tree.
+ Where each node contains an index of a wire , and each comparator splits
+ a node to the two input nodes leading to it.
+ Duplicating nodes on the same level if needed (if both outputs are being
+ used in the level before it).
+ The tree has at least 
+\begin_inset Formula $k$
+\end_inset
+
+ leafs (not including the duplicates), and therefore at least 
+\begin_inset Formula $\log k$
+\end_inset
+
+ levels.
+ Each level in the tree feeds the level above it.
+ Therefor the network has at least depth 
+\begin_inset Formula $\log k$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
