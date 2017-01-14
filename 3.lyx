@@ -367,7 +367,33 @@ a.
 
 \begin_layout Standard
 b.
+ Look on an output wire in the lower half of the output wires, at least
  
+\begin_inset Formula $\frac{n}{2}+1$
+\end_inset
+
+ inputs should be able to reach it.
+ Otherwise we can chose less than 
+\begin_inset Formula $\frac{n}{2}+1$
+\end_inset
+
+ concrete inputs that should belong to the upper half.
+ Leaving this output wire with no input source to output.
+ (TODO: rephrase a little).
+ 
+\end_layout
+
+\begin_layout Standard
+Since at least 
+\begin_inset Formula $\frac{n}{2}+1$
+\end_inset
+
+ inputs can reach this output wire, using the previous subquestion, the
+ network depth must be at least 
+\begin_inset Formula $\log\left(\frac{n}{2}+1\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
