@@ -708,16 +708,20 @@ b.
 
 \begin_layout Standard
 c.
- From clause 3 of the invariant at each node 
-\begin_inset Formula $m_{node}<n\nu^{t}A^{d}=b$
+ From clause 3 of the invariant, at node 
+\begin_inset Formula $B$
 \end_inset
 
-, so for each ancestor of 
+ we have 
+\begin_inset Formula $m_{\text{node\_}B}<n\nu^{t}A^{d}=b$
+\end_inset
+
+, so for each node above 
 \begin_inset Formula $B$
 \end_inset
 
 , we have 
-\begin_inset Formula $m_{ancstor}<b/A^{i}$
+\begin_inset Formula $m_{\text{node\_above}}<b/A^{i}$
 \end_inset
 
  for some 
@@ -744,7 +748,7 @@ Since
 \begin_inset Formula $m<1$
 \end_inset
 
- for all ancestors of 
+ for all the nodes above 
 \begin_inset Formula $B$
 \end_inset
 
@@ -753,7 +757,7 @@ Since
 \end_layout
 
 \begin_layout Standard
-Furthermore
+Furthermore, 
 \begin_inset Formula $m$
 \end_inset
 
