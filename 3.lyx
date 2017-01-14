@@ -403,40 +403,42 @@ Since at least
 \end_layout
 
 \begin_layout Standard
+c.
+ Look on the 
+\begin_inset Formula $n$
+\end_inset
 
+th output wire, any input may reach it.
+ E.g.
+ if all the items of the second sequence are bigger than the first sequence,
+ then the last item of the first sequence will reach the 
+\begin_inset Formula $n$
+\end_inset
+
+th output wire.
+ If all the items of the second sequence are bigger than 
+\begin_inset Formula $k$
+\end_inset
+
+ items of the first sequence, then the 
+\begin_inset Formula $\left(n-k\right)$
+\end_inset
+
+th item of the second sequence will reach the 
+\begin_inset Formula $n$
+\end_inset
+
+th output wire.
 \end_layout
 
 \begin_layout Standard
-c.
- From [Miltersen-Paterson-Tauri (1996)], we have 
-\begin_inset Formula $M(n,m)\ge\frac{1}{2}(n+m)\log m+O(m)$
+Since at least 
+\begin_inset Formula $2n$
 \end_inset
 
-.
- So 
-\begin_inset Formula $M(n,n)\ge(\frac{1}{2}n)2\log n+O(n)$
-\end_inset
-
-.
- Since every level can have at most 
-\begin_inset Formula $\frac{n}{2}$
-\end_inset
-
- comparators, we need at least 
-\begin_inset Formula $2\log n$
-\end_inset
-
- layers.
- Since 
-\begin_inset Formula $2\log n>\log2n$
-\end_inset
-
- for 
-\begin_inset Formula $n>2$
-\end_inset
-
-, the depth is at least 
-\begin_inset Formula $\text{log}2n$
+ inputs can reach this output wire, using the previous previous subquestion,
+ the network depth must be at least 
+\begin_inset Formula $\log\left(2n\right)$
 \end_inset
 
 .
@@ -462,8 +464,12 @@ If
 \begin_inset Formula $C$
 \end_inset
 
- is at the ith level from the root, (and the root is 0 levels from the root),
- than there are 
+ is at the 
+\begin_inset Formula $i$
+\end_inset
+
+th level from the root, (and the root is 0 levels from the root), than there
+ are 
 \begin_inset Formula $2^{i}$
 \end_inset
 
