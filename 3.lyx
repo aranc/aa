@@ -373,14 +373,13 @@ b.
 \end_inset
 
  inputs should be able to reach it.
- Otherwise we can chose less than 
-\begin_inset Formula $\frac{n}{2}+1$
+ Otherwise there are only 
+\begin_inset Formula $m\le\frac{n}{2}$
 \end_inset
 
- concrete inputs that should belong to the upper half.
- Leaving this output wire with no input source to output.
- (TODO: rephrase a little).
- 
+ input wires that can reach it, and we can chose the input numbers on these
+ wires to belong to the upper half, which is a contradiction, since this
+ will leave that output wire without any valid number to output.
 \end_layout
 
 \begin_layout Standard
@@ -404,27 +403,6 @@ Since at least
 \end_layout
 
 \begin_layout Standard
-Lets look on an item from the first half of the input, it might end up in
- the bottom half of the output, if there are 
-\begin_inset Formula $n/2$
-\end_inset
-
- inputs that are smaller than it.
- Comparing a number against 
-\begin_inset Formula $n/2$
-\end_inset
-
- other arbitrary numbers, will take at least 
-\begin_inset Formula $\log n/2$
-\end_inset
-
- parallel steps.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\phantom{A}$
-\end_inset
-
 
 \end_layout
 
