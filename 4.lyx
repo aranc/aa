@@ -150,7 +150,7 @@ status open
 
 \begin_layout Plain Layout
 for 
-\begin_inset Formula $\log2k$
+\begin_inset Formula $\log_{2}2k$
 \end_inset
 
  times:
