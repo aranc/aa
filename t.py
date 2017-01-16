@@ -7,8 +7,8 @@ def my_floor_log(x):
 def c1(b, k):
     c1 = 1 << b
     i = 0
-    #for tmp1 in range(my_floor_log(2*k)):
-    for tmp1 in range(my_floor_log(k)):
+    for tmp1 in range(my_floor_log(2*k)):
+    #for tmp1 in range(my_floor_log(k)):
         t = c1 << ((b+1) * (1 << i))
         c1 = c1 | t
         i = i + 1

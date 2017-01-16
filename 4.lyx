@@ -177,108 +177,7 @@ for
 \end_inset
 
 
-\begin_inset Formula $i\leftarrow i+1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Formula $t\leftarrow c_{1}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-for 
-\begin_inset Formula $b$
-\end_inset
-
- times:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Formula $t\leftarrow t\ll\left(1\ll1\right)$
+\begin_inset Formula $t\leftarrow c_{1}\ll\left(\left(b+1\right)*(1\ll i)\right)$
 \end_inset
 
 
@@ -311,9 +210,89 @@ for
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset space ~
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $i\leftarrow i+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This only works for 
+\begin_inset Formula $k$
+\end_inset
+
+ values that are a power of 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Other cases can use split 
+\begin_inset Formula $k$
+\end_inset
+
+ according to its bits and use the above as subroutine.
+\end_layout
+
+\begin_layout Standard
+Altough I used a multiplication in the constant 
+\begin_inset Formula $\left(b+1\right)*(1\ll i)$
+\end_inset
+
+, this constant can be computed in 
+\begin_inset Formula $O(b)$
+\end_inset
+
+ time at every iteration.
+ Perhaps even faster.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TODO: c2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+ C1!!!!
 \end_layout
 
 \end_body
