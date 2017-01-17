@@ -528,6 +528,35 @@ Similarly to how we constructed
 \end_layout
 
 \begin_layout Standard
+Note: The 
+\begin_inset Formula $\&$
+\end_inset
+
+ symbol is bit-wise 
+\begin_inset Quotes eld
+\end_inset
+
+and
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The 
+\begin_inset Formula $|$
+\end_inset
+
+ symbol is bit-wise 
+\begin_inset Quotes eld
+\end_inset
+
+or
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
