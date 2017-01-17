@@ -82,10 +82,20 @@ def c1(k,b):
     return (c1)
 
 def c2(k, b):
-    c2 = 1
+    c_1 = c1(k,b)
+    c2 = 0
     i = 0
     for tmp1 in range(my_ceil_log(2*k)):
         t = c2 << ((b+1) << i)
-        c1 = c2 + t
+        c2 = c2 | t
+        t = c_1 << (((b+1) << i) - b + i)
+        t = t & ((1 << ((b+1)<<(i+1))) - 1)
+        print "t:", my_bin(t, b+1)
+        print "c2:", my_bin(c2, b+1)
+        c2 = c2 | t
         i = i + 1
     return (c2)
+
+k = 3
+b = 4
+print my_bin(c2(k,b), b+1)
