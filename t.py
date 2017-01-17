@@ -76,3 +76,6 @@ def ct(k,b):
     return (c1)
 #print my_bin(ct(3, 4), 4+1)
 
+def c2(k, b):
+    return (c1(k,b)>>b) ** 2
+
