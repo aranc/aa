@@ -367,7 +367,7 @@ c_{1}(k,b) & =2^{b+1}+2^{b+1}2^{b+1}+2^{b+1}\left(2^{b+1}\right)^{2}+...+2^{b+1}
 
 \begin_layout Standard
 So 
-\begin_inset Formula $C_{1}(k,b)=\left(\left(1-\left(1\ll\left(\left(b+1\right)*2k\right)\right)\right)/\left(1-\left(1\ll\left(b+1\right)\right)\right)\right)\ll\left(b+1\right)$
+\begin_inset Formula $C_{1}(k,b)=\left(\left(1-\left(1\ll\left(\left(b+1\right)*2k\right)\right)\right)/\left(1-\left(1\ll\left(b+1\right)\right)\right)\right)\ll b$
 \end_inset
 
 

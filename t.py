@@ -7,7 +7,7 @@ def my_floor_log(x):
 def my_ceil_log(x):
     return int(floor(log(x)/log(2)))
 
-def c1(k,b):
+def _c1(k,b):
     c1 = 1 << b
     i = 0
     for tmp1 in range(my_ceil_log(2*k)):
@@ -18,7 +18,10 @@ def c1(k,b):
     #return bin(c1)
     return (c1)
 
-#print [(2**i, bin(c1(2**i,2)).count('1')) for i in range(1,10)]
+def c1(k, b):
+    return ((1-(1<<((b+1)*2*k)))/(1-(1<<(b+1))))<<(b)
+
+print [(2**i, bin(c1(2**i,2)).count('1')) for i in range(1,10)]
 
 def my_bin(x, g):
     t="".join(reversed(bin(x)[2:]))
@@ -71,4 +74,5 @@ def ct(k,b):
         i = i + 1
     #return bin(c1)
     return (c1)
-print my_bin(ct(3, 4), 4+1)
+#print my_bin(ct(3, 4), 4+1)
+
