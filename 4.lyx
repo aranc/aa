@@ -288,6 +288,10 @@ Or alternatively, if we have
 \end_layout
 
 \begin_layout Standard
+TODO: C2!
+\end_layout
+
+\begin_layout Standard
 To construct 
 \begin_inset Formula $C_{2}$
 \end_inset
@@ -403,6 +407,17 @@ Since
 
 \begin_layout Standard
 The mask in the end is to remove excess bits.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
 \end_layout
 
 \end_body
