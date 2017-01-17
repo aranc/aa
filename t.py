@@ -15,8 +15,17 @@ def c1(b, k):
         t = c1 << ((b+1) << i)
         c1 = c1 | t
         i = i + 1
-    return bin(c1)
+    #return bin(c1)
+    return (c1)
 
 #print [(2**i, c1(2,2**i).count('1')) for i in range(1,10)]
 
-print c1(3,4)
+k=3
+b=4
+_sum = 0
+for i in [0,1,2]:
+    res = (c1(k>>i,((b+1)<<i)-1)>>(b-1-i))
+    _sum += res
+    print i, bin(res)
+#print bin(_sum)
+

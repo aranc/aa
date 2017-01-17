@@ -299,7 +299,7 @@ To construct
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $C_{1}(k,\left(\left(b+1\right)\ll i\right)-1)\gg\left(i\right)$
+\begin_inset Formula $C_{1}(k\gg i,\left(\left(b+1\right)\ll i\right)-1)\gg\left(b-1-i\right)$
 \end_inset
 
  for 
@@ -328,7 +328,11 @@ contributes a single bit
 \begin_inset Formula $b-1$
 \end_inset
 
- is contributed to all keys in the upper half of the register).
+ is contributed to all keys that are greater equal than 
+\begin_inset Formula $2^{b-1}$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
