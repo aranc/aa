@@ -28,7 +28,7 @@ def my_bin(x, g):
     T=""
     for i in range(len(t)):
         T += t[i]
-        if i % g == g-1 :
+        if i % g == g-1 and i != len(t) - 1:
             T += " "
     i += 1
     while i % g != 0:
