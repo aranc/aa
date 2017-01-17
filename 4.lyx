@@ -382,7 +382,27 @@ So
 
 \begin_layout Standard
 c.
- my_bin((c1(10,4)>>4)**2,5)
+ 
+\begin_inset Formula $C_{2}(k,b)=\left(\left(c_{1}(k,b)\gg b\right)*\left(c_{1}(k,b)\gg b\right)\right)\wedge\left(\left(1\ll\left(2k*\left(b+1\right)\right)\right)-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ is the repeated addition of several 
+\begin_inset Formula $\left(b+1\right)$
+\end_inset
+
+ shifted copies of 
+\begin_inset Formula $\left(C_{1}\gg b\right)$
+\end_inset
+
+
 \end_layout
 
 \end_body
