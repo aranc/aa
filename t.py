@@ -9,7 +9,7 @@ def c1(b, k):
     i = 0
     for tmp1 in range(my_floor_log(2*k)):
     #for tmp1 in range(my_floor_log(k)):
-        t = c1 << ((b+1) * (1 << i))
+        t = c1 << ((b+1) << i)
         c1 = c1 | t
         i = i + 1
     return bin(c1)

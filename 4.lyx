@@ -177,7 +177,7 @@ for
 \end_inset
 
 
-\begin_inset Formula $t\leftarrow c_{1}\ll\left(\left(b+1\right)*(1\ll i)\right)$
+\begin_inset Formula $t\leftarrow c_{1}\ll\left(\left(b+1\right)\ll i\right)$
 \end_inset
 
 
@@ -257,19 +257,6 @@ This only works for
 \end_inset
 
  according to its bits and use the above as subroutine.
-\end_layout
-
-\begin_layout Standard
-Altough I used a multiplication in the constant 
-\begin_inset Formula $\left(b+1\right)*(1\ll i)$
-\end_inset
-
-, this constant can be computed in 
-\begin_inset Formula $O(b)$
-\end_inset
-
- time at every iteration.
- Perhaps even faster.
 \end_layout
 
 \begin_layout Standard
