@@ -256,7 +256,23 @@ This only works for
 \begin_inset Formula $k$
 \end_inset
 
- according to its bits and use the above as subroutine.
+ according to its bits and use the above as a subroutine.
+\end_layout
+
+\begin_layout Standard
+Or alternatively, if we have 
+\begin_inset Formula $w$
+\end_inset
+
+ big enough, we can use a bigger 
+\begin_inset Formula $k$
+\end_inset
+
+ that is a power of 
+\begin_inset Formula $2$
+\end_inset
+
+, and then use a mask to remove the unwanted bits.
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +283,52 @@ This only works for
 \end_layout
 
 \begin_layout Standard
-TODO: c2
+To construct 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+: We build the following 
+\begin_inset Formula $b$
+\end_inset
+
+ constants and summarize them to get 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}(k,\left(\left(b+1\right)\ll i\right)-1)\gg\left(i\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $1\le i\le b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This works since each constant 
+\begin_inset Quotes eld
+\end_inset
+
+contributes a single bit
+\begin_inset Quotes erd
+\end_inset
+
+ to all keys that have this bit turned on.
+ (e.g.
+ bit number 
+\begin_inset Formula $1$
+\end_inset
+
+ is contributed to all odd keys, bit number 
+\begin_inset Formula $b-1$
+\end_inset
+
+ is contributed to all keys in the upper half of the register).
 \end_layout
 
 \begin_layout Standard
