@@ -394,15 +394,15 @@ Since
 \begin_inset Formula $C_{2}$
 \end_inset
 
- is the repeated addition of several 
-\begin_inset Formula $\left(b+1\right)$
-\end_inset
-
- shifted copies of 
+ is the repeated addition of several shifted copies of 
 \begin_inset Formula $\left(C_{1}\gg b\right)$
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+The mask in the end is to remove excess bits.
 \end_layout
 
 \end_body

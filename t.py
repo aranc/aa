@@ -30,6 +30,10 @@ def my_bin(x, g):
         T += t[i]
         if i % g == g-1 :
             T += " "
+    i += 1
+    while i % g != 0:
+        i += 1
+        T += "0"
     return "".join(reversed(T))
     
 
@@ -76,6 +80,6 @@ def ct(k,b):
     return (c1)
 #print my_bin(ct(3, 4), 4+1)
 
-def c2(k, b):
-    return (c1(k,b)>>b) ** 2
+def _c2(k, b):
+    return ((c1(k,b)>>b) ** 2) & ((1<<(2*k*(b+1))) - 1)
 
