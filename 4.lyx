@@ -109,7 +109,7 @@ Aran Carmon <aran.carmon@gmail.com> 038847588
 \begin_layout Standard
 a.
  To construct 
-\begin_inset Formula $C_{1}$
+\begin_inset Formula $c_{1}$
 \end_inset
 
 :
@@ -243,6 +243,15 @@ for
 \end_layout
 
 \begin_layout Standard
+At each step, we duplicate the current string of 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 This only works for 
 \begin_inset Formula $k$
 \end_inset
@@ -288,60 +297,234 @@ Or alternatively, if we have
 \end_layout
 
 \begin_layout Standard
-TODO: C2!
-\end_layout
-
-\begin_layout Standard
 To construct 
-\begin_inset Formula $C_{2}$
+\begin_inset Formula $c_{2}$
 \end_inset
 
-: We build the following 
-\begin_inset Formula $b$
-\end_inset
-
- constants and summarize them to get 
-\begin_inset Formula $C_{2}$
-\end_inset
-
-: 
+:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $C_{1}(k,\left(\left(b+1\right)\ll i\right)-1)\gg\left(b-1-i\right)$
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{1}\leftarrow c_{1}(k,b)$
 \end_inset
 
- for 
-\begin_inset Formula $1\le i\le b$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{2}\leftarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $i\leftarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+for 
+\begin_inset Formula $\log_{2}2k$
+\end_inset
+
+ times:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $t\leftarrow c_{2}\ll\left(\left(b+1\right)\ll i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $c_{2}\leftarrow c_{2}|\,t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $t\leftarrow c_{1}\ll\left(\left(\left(b+1\right)\ll i\right)-b+i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $t\leftarrow t\&\left(\left(1\ll\left(\left(b+1\right)\ll\left(i+1\right)\right)\right)-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $c_{2}\leftarrow c_{2}|\,t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $i\leftarrow i+1$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-This works since each constant 
-\begin_inset Quotes eld
+Similarly to how we constructed 
+\begin_inset Formula $c_{1}$
 \end_inset
 
-contributes a single bit
-\begin_inset Quotes erd
-\end_inset
-
- to all keys that have this bit turned on.
- (e.g.
- bit number 
-\begin_inset Formula $1$
-\end_inset
-
- is contributed to all odd keys, bit number 
-\begin_inset Formula $b-1$
-\end_inset
-
- is contributed to all keys that are greater equal than 
-\begin_inset Formula $2^{b-1}$
-\end_inset
-
-).
+, this time at each step we turn on the relevant bit.
 \end_layout
 
 \begin_layout Standard
@@ -387,7 +570,7 @@ So
 \begin_layout Standard
 c.
  
-\begin_inset Formula $C_{2}(k,b)=\left(\left(c_{1}(k,b)\gg b\right)*\left(c_{1}(k,b)\gg b\right)\right)\wedge\left(\left(1\ll\left(2k*\left(b+1\right)\right)\right)-1\right)$
+\begin_inset Formula $C_{2}(k,b)=\left(\left(c_{1}(k,b)\gg b\right)*\left(c_{1}(k,b)\gg b\right)\right)\&\left(\left(1\ll\left(2k*\left(b+1\right)\right)\right)-1\right)$
 \end_inset
 
 
