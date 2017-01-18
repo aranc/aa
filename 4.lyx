@@ -722,12 +722,23 @@ b.
 \begin_inset Formula $O(\sum_{i=1}^{\log\log n}n)$
 \end_inset
 
- space, we can pack the smaller numbers tighter in memory, and reduce to
- 
+ space, we can pack the smaller numbers tighter in memory.
+ e.g.
+ after one halving, we will pack 2 numbers inside 1 word on the stack.
+ After 
+\begin_inset Formula $i$
+\end_inset
+
+ halvings, we will pack 
+\begin_inset Formula $2^{i}$
+\end_inset
+
+ numbers inside 1 word.
+ This will reduce the space consumption to 
 \begin_inset Formula $O(\sum_{i=0}^{\log\log n}\frac{n}{2^{i}})\le O(\sum_{i=0}^{\infty}\frac{n}{2^{i}})=O(n)$
 \end_inset
 
- space.
+.
  
 \end_layout
 
