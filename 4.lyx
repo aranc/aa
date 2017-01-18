@@ -682,6 +682,48 @@ The preliminary sorting step also takes
 \end_layout
 
 \begin_layout Standard
+a.
+ The algorithm is dominated by the range-reduction recursion step, storing
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ numbers, for 
+\begin_inset Formula $\frac{w}{\log n}$
+\end_inset
+
+ steps.
+ That is space complexity of 
+\begin_inset Formula $O(\frac{nw}{\log n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+ At each recursion step, the number of bits per key is halved, so instead
+ of 
+\begin_inset Formula $O(\sum_{i=1}^{\frac{w}{\log n}}n)$
+\end_inset
+
+ space, we can pack the smaller numbers tighter in memory, and reduce to
+ 
+\begin_inset Formula $O(\sum_{i=0}^{\frac{w}{\log n}}\frac{n}{2^{i}})\le O(\sum_{i=0}^{\infty}\frac{n}{2^{i}})=O(n)$
+\end_inset
+
+ space.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
