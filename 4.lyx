@@ -599,7 +599,7 @@ So
 \begin_layout Standard
 c.
  
-\begin_inset Formula $C_{2}(k,b)=\left(\left(c_{1}(k,b)\gg b\right)*\left(c_{1}(k,b)\gg b\right)\right)\&\left(\left(1\ll\left(2k*\left(b+1\right)\right)\right)-1\right)$
+\begin_inset Formula $C_{2}(k,b)=\left(\left(\left(c_{1}(k,b)\gg b\right)*\left(c_{1}(k,b)\gg b\right)\right)\ll\left(b+1\right)\right)\&\left(\left(1\ll\left(2k*\left(b+1\right)\right)\right)-1\right)$
 \end_inset
 
 
@@ -610,7 +610,7 @@ This is simply taking
 \begin_inset Formula $C_{1}$
 \end_inset
 
- shifted, multiplying it by itself, and applying a mask.
+ shifted, multiplying it by itself, shifting, and applying a mask.
 \end_layout
 
 \begin_layout Standard
