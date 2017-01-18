@@ -724,6 +724,11 @@ b.
 \end_layout
 
 \begin_layout Standard
+The running time is left unharmed, since we only trivially modified the
+ convention of how we pass arguments along the stack.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\phantom{A}$
 \end_inset
 
