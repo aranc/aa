@@ -606,7 +606,15 @@ c.
 \end_layout
 
 \begin_layout Standard
-Since 
+This is simply taking 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ shifted, multiplying it by itself, and applying a mask.
+\end_layout
+
+\begin_layout Standard
+This is true since 
 \begin_inset Formula $C_{2}$
 \end_inset
 
@@ -689,12 +697,12 @@ a.
 \end_inset
 
  numbers, for 
-\begin_inset Formula $\log\left(\frac{w}{\log n}\right)$
+\begin_inset Formula $\log\log n$
 \end_inset
 
  steps.
- That is space complexity of 
-\begin_inset Formula $O(n\log\left(\frac{w}{\log n}\right))$
+ So the space complexity is 
+\begin_inset Formula $O(n\log\log n)$
 \end_inset
 
 .
@@ -710,13 +718,13 @@ a.
 \begin_layout Standard
 b.
  At each recursion step, the number of bits per key is halved, so instead
- of 
-\begin_inset Formula $O(\sum_{i=1}^{\log\left(\frac{w}{\log n}\right)}n)$
+ of using 
+\begin_inset Formula $O(\sum_{i=1}^{\log\log n}n)$
 \end_inset
 
  space, we can pack the smaller numbers tighter in memory, and reduce to
  
-\begin_inset Formula $O(\sum_{i=0}^{\log\left(\frac{w}{\log n}\right)}\frac{n}{2^{i}})\le O(\sum_{i=0}^{\infty}\frac{n}{2^{i}})=O(n)$
+\begin_inset Formula $O(\sum_{i=0}^{\log\log n}\frac{n}{2^{i}})\le O(\sum_{i=0}^{\infty}\frac{n}{2^{i}})=O(n)$
 \end_inset
 
  space.
@@ -737,6 +745,64 @@ The running time is left unharmed, since we only trivially modified the
 
 \begin_layout Standard
 4.
+ We break each key to 
+\begin_inset Formula $r$
+\end_inset
+
+ pieces of at most 
+\begin_inset Formula $\left\lceil \frac{w}{r}\right\rceil $
+\end_inset
+
+ bits each.
+ Each key is now a string of smaller keys.
+ By using the forward-radix-sort algorithm, we can sort these strings in
+ 
+\begin_inset Formula $O(N+n\log\log n)$
+\end_inset
+
+ time.
+ Since all smaller keys are important, 
+\begin_inset Formula $N=nr$
+\end_inset
+
+, and the time complexity is 
+\begin_inset Formula $O(nr+n\log\log n)$
+\end_inset
+
+ which is 
+\begin_inset Formula $O(n\log\log n)$
+\end_inset
+
+ for a constant 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for the space complexity.
+ The original deterministic algorithm used 
+\begin_inset Formula $O(n+2^{w})$
+\end_inset
+
+ space (Instead of hash tables, we use big arrays).
+ Since we now sort smaller keys, of length 
+\begin_inset Formula $\frac{w}{r}$
+\end_inset
+
+ bits, we only use 
+\begin_inset Formula $O(n+2^{\frac{w}{r}})$
+\end_inset
+
+ space.
 \end_layout
 
 \begin_layout Standard
@@ -748,6 +814,55 @@ The running time is left unharmed, since we only trivially modified the
 
 \begin_layout Standard
 5.
+\end_layout
+
+\begin_layout Standard
+a.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phantom{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.
+ Suppose 
+\begin_inset Formula $nq\ge n^{2}$
+\end_inset
+
+.
+ We chose 
+\begin_inset Formula $q$
+\end_inset
+
+ such that 
+\begin_inset Formula $q=\theta\left(\frac{w}{\log^{2}n\log\log n}\right)$
+\end_inset
+
+, So 
+\begin_inset Formula $\theta\left(\frac{w}{\log^{2}n\log\log n}\right)\ge n$
+\end_inset
+
+, and 
+\begin_inset Formula $w\ge\theta\left(n\log^{2}n\log\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $w\ge\log n$
+\end_inset
+
+, we can sort in 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
 \end_layout
 
 \end_body
