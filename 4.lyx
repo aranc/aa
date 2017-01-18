@@ -854,15 +854,7 @@ b.
 \end_layout
 
 \begin_layout Standard
-Since 
-\begin_inset Formula $w\ge\log n$
-\end_inset
-
-, we can sort in 
-\begin_inset Formula $O(n)$
-\end_inset
-
-.
+And...
 \end_layout
 
 \end_body
