@@ -638,44 +638,31 @@ The mask in the end is to remove excess bits.
 
 \begin_layout Standard
 2.
- Need to use it that they all enter a single word.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\phantom{A}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We use the packed sorting algorithm shown in class, with 
+ Since 
 \begin_inset Formula $b=\frac{w}{\log n\log\log n}$
 \end_inset
 
- and 
-\begin_inset Formula $k=\theta\left(\frac{w}{b}\right)=\theta\left(\log n\log\log n\right)$
+, we can pack 
+\begin_inset Formula $k=\theta\left(\log n\log\log n\right)$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-The merging part of the algorithm takes 
-\begin_inset Formula $O(n\log n\frac{\log k}{k})=O(n\frac{\log\left(\log n\log\log n\right)}{\log\log n})\le O(n\frac{\log\left(\log^{2}n\right)}{\log\log n})=O(n\frac{2\log\log n}{\log\log n})=O(n)$
+ keys inside a single word.
+ And use a bitonic network (as shown in class), to save a factor of 
+\begin_inset Formula $O\left(k/\log k\right)$
 \end_inset
 
-.
- 
-\end_layout
+ on standard merge sort, thus the running time is:
+\begin_inset Formula 
+\begin{align*}
+O\left(\frac{n\log n\log k}{k}\right) & =O\left(\frac{n\log n\log\left(\log n\log\log n\right)}{\log n\log\log n}\right)\\
+ & =O\left(\frac{n\log n\log\left(\log n+\log\log\log n\right)}{\log n\log\log n}\right)\\
+ & =O\left(\frac{n\log n\log\log n}{\log n\log\log n}\right)\\
+ & =O\left(n\right)
+\end{align*}
 
-\begin_layout Standard
-The preliminary sorting step also takes 
-\begin_inset Formula $O(\frac{n}{k}k)=O(n),$
 \end_inset
 
- Since ...
- 
+
 \end_layout
 
 \begin_layout Standard
