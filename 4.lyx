@@ -647,7 +647,15 @@ The mask in the end is to remove excess bits.
 \end_inset
 
  keys inside a single word.
- And use a bitonic network (as shown in class), to save a factor of 
+ And using a bitonic sorting network (as shown in class), we can sort 
+\begin_inset Formula $k$
+\end_inset
+
+ keys in 
+\begin_inset Formula $O\left(\log k\right)$
+\end_inset
+
+ time, and save a factor of 
 \begin_inset Formula $O\left(k/\log k\right)$
 \end_inset
 
