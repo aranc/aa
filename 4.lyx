@@ -767,7 +767,8 @@ The running time is left unharmed, since we only trivially modified the
 \end_inset
 
  time.
- Since all smaller keys are important, 
+ Since all the characters in the smaller keys are important and must be
+ read, the number of important characters is 
 \begin_inset Formula $N=nr$
 \end_inset
 
