@@ -825,6 +825,24 @@ Now for the space complexity.
 
 \begin_layout Standard
 a.
+ We chose 
+\begin_inset Formula $q=\theta\left(\frac{w}{\left(\log n\right)^{2}\log\log n}\right)$
+\end_inset
+
+.
+ So we can get 
+\begin_inset Formula $nq\ge n^{2}$
+\end_inset
+
+, if 
+\begin_inset Formula $w$
+\end_inset
+
+ is big enough, that is if 
+\begin_inset Formula $w\ge\theta\left(n\left(\log n\right)^{2}\log\log n\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -836,36 +854,7 @@ a.
 
 \begin_layout Standard
 b.
- Suppose 
-\begin_inset Formula $nq\ge n^{2}$
-\end_inset
-
-.
- We chose 
-\begin_inset Formula $q$
-\end_inset
-
- such that 
-\begin_inset Formula $q=\theta\left(\frac{w}{\log^{2}n\log\log n}\right)$
-\end_inset
-
-, So 
-\begin_inset Formula $\theta\left(\frac{w}{\log^{2}n\log\log n}\right)\ge n$
-\end_inset
-
-, and 
-\begin_inset Formula $w\ge\theta\left(n\log^{2}n\log\log n\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-And...
-\end_layout
-
-\begin_layout Standard
-(consider using andersson-nilsson to sort quicker)
+ 
 \end_layout
 
 \end_body
