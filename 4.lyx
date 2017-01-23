@@ -854,7 +854,41 @@ a.
 
 \begin_layout Standard
 b.
- 
+ If 
+\begin_inset Formula $w$
+\end_inset
+
+ is very big, 
+\begin_inset Formula $w\ge\theta\left(n\left(\log n\right)^{2}\log\log n\right)$
+\end_inset
+
+, chose an alternative 
+\begin_inset Formula $q$
+\end_inset
+
+, 
+\begin_inset Formula $\tilde{q}=n$
+\end_inset
+
+.
+ We now have 
+\begin_inset Formula $\tilde{q}n\le n^{2}$
+\end_inset
+
+ and we can use the hash.
+ The recursion is now: 
+\begin_inset Formula 
+\begin{align*}
+T(n,b) & =O(n)+T(n,\tilde{q}\log n)+T\left(n,b/\tilde{q}\right)\\
+ & =O(n)+T(n,n\log n)+T\left(n,\frac{w}{n}\right)\\
+ & \le O(n)+T(n,\frac{w}{\log n\log\log n})+T(n,\frac{w}{\left(\log n\right)^{2}\log\log n})\\
+ & =O(n)+O(n)+O(n)\\
+ & =O(n)
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
